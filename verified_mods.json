@@ -1,0 +1,38 @@
+{
+  "TF1.RunoffModels": {
+    "Repository": "https://github.com/Strykus/TF1-Runoff",
+    "Versions": [
+      {
+        "Version": "0.3.0",
+        "CommitHash": "ff710d814441574c5a25ffd906aef7b5c725aad3",
+        "DownloadLink": "https://github.com/Strykus/TF1-Runoff/releases/download/v0.3.0/TF1.RunoffModels-0.3.0.zip",
+        "Checksum": "a4bb6c5f5e6ca5a2e9183f946494fed6c4c67b3a0c00a6fb649a05555b15ed35",
+        "Platform": "modworkshop"
+      }
+    ]
+  },
+  "TF1.RunoffWorld": {
+    "Repository": "https://github.com/Strykus/TF1-Runoff",
+    "Versions": [
+      {
+        "Version": "0.3.0",
+        "CommitHash": "ff710d814441574c5a25ffd906aef7b5c725aad3",
+        "DownloadLink": "https://github.com/Strykus/TF1-Runoff/releases/download/v0.3.0/TF1.RunoffWorld-0.3.0.zip",
+        "Checksum": "f28d648e97797f288fac104ac4f239af1a5fd18da484e30fa386b6a107fef647",
+        "Platform": "modworkshop"
+      }
+    ]
+  },
+  "TF1.RunoffNative": {
+    "Repository": "https://github.com/Strykus/TF1-Runoff",
+    "Versions": [
+      {
+        "Version": "0.3.0",
+        "CommitHash": "ff710d814441574c5a25ffd906aef7b5c725aad3",
+        "DownloadLink": "https://github.com/Strykus/TF1-Runoff/releases/download/v0.3.0/TF1.RunoffNative-0.3.0.zip",
+        "Checksum": "7e7b817ec72364036107183e9af35a0b2ca6b6d4423da972b1c28ffb61f5db44",
+        "Platform": "modworkshop"
+      }
+    ]
+  }
+}
