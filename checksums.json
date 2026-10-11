@@ -1,0 +1,26 @@
+[
+  {
+    "name": "TF1.RunoffModels",
+    "version": "0.3.0",
+    "archive": "build\\runoff-public-release\\TF1.RunoffModels-0.3.0.zip",
+    "sha256": "a4bb6c5f5e6ca5a2e9183f946494fed6c4c67b3a0c00a6fb649a05555b15ed35",
+    "uncompressedBytes": 1229182783,
+    "bytes": 487607445
+  },
+  {
+    "name": "TF1.RunoffWorld",
+    "version": "0.3.0",
+    "archive": "build\\runoff-public-release\\TF1.RunoffWorld-0.3.0.zip",
+    "sha256": "f28d648e97797f288fac104ac4f239af1a5fd18da484e30fa386b6a107fef647",
+    "uncompressedBytes": 1518804306,
+    "bytes": 886512761
+  },
+  {
+    "name": "TF1.RunoffNative",
+    "version": "0.3.0",
+    "archive": "build\\runoff-public-release\\TF1.RunoffNative-0.3.0.zip",
+    "sha256": "7e7b817ec72364036107183e9af35a0b2ca6b6d4423da972b1c28ffb61f5db44",
+    "uncompressedBytes": 1484364253,
+    "bytes": 919798756
+  }
+]
