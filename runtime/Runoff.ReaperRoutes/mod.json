@@ -1,0 +1,25 @@
+{
+  "Name": "Runoff.ReaperRoutes",
+  "Version": "0.1.0",
+  "LoadPriority": 130,
+  "ConVars": [
+    {
+      "Name": "runoff_reapers_enabled",
+      "DefaultValue": "0",
+      "Flags": "REPLICATED"
+    }
+  ],
+  "Scripts": [
+    {
+      "Path": "sh_runoff_reapers.gnut",
+      "RunOn": "SERVER || CLIENT"
+    },
+    {
+      "Path": "sv_runoff_reapers.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "RunoffReapers_Init"
+      }
+    }
+  ]
+}

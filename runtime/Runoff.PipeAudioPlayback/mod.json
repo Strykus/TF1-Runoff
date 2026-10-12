@@ -1,0 +1,22 @@
+{
+  "Name": "Runoff.PipeAudioPlayback",
+  "Version": "0.1.0",
+  "LoadPriority": 100,
+  "RequiredOnClient": true,
+  "Scripts": [
+    {
+      "Path": "sv_pipe_playback.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "RunoffPipePlayback_Init"
+      }
+    },
+    {
+      "Path": "cl_pipe_playback.nut",
+      "RunOn": "CLIENT && MP",
+      "ClientCallback": {
+        "After": "RunoffPipePlayback_ClientInit"
+      }
+    }
+  ]
+}

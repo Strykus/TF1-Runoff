@@ -1,0 +1,5 @@
+particles_manifest
+{
+ "file" "particles/tf1_runoff_original_sun.pcf"
+ "file" "particles/tf1_runoff_ground_fog.pcf"
+}

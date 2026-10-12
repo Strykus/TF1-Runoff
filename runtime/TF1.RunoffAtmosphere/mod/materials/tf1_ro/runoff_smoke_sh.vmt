@@ -1,0 +1,27 @@
+// v1.01
+//This file is auto-generated from reVaMpT. Edit at your own risk.
+"UnlitTexture"
+{
+	"$vertexcolor" "1"
+	"$vertcoloristint" "1"
+	"$vertexalpha" "1"
+
+	"$surfaceprop" "dirt"
+	"$basetexture" "tf1_runoff/atmosphere/models/vistas/runoff/runoff_smoke_sh_col"
+	"$translucent" "1"
+	//Start of freehand input from reVaMpT//
+
+		$allowoverbright 1
+		"$color2" "[1.10 1.10 1.10]"
+	
+	"Proxies"
+	{	
+		"TextureScroll"
+			{		
+				"texturescrollvar" "$baseTextureTransform"	
+				"texturescrollrate" ".02"
+				"texturescrollangle" "90"
+			}
+	}
+}
+

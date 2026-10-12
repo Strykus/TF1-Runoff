@@ -1,0 +1,5 @@
+{
+  "Postload": {
+    "tf1_runoff_oil_water.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_world_native.rpak"
+  }
+}

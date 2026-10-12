@@ -1,0 +1,10 @@
+"spritecard"
+{
+	"$basetexture" "r1_sun00\glows\flare_hoop"
+	$translucent 1
+	//$additive 1
+	$screenblend "1"
+	$ignorez 1
+	$depthblend 0
+	$muloutputbyalpha 1
+}

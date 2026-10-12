@@ -1,0 +1,17 @@
+// v1.01
+//This file is auto-generated from reVaMpT. Edit at your own risk.
+"UnlitTexture"
+{
+ "$nofog" "0"
+
+
+	"$surfaceprop" "dirt"
+	"$basetexture" "tf1_runoff/atmosphere/models/vistas/runoff/runoff_sky_col"
+	//Start of freehand input from reVaMpT//
+
+		$allowoverbright 1
+		"$color2" "[1.0 1.0 1.0]"
+}
+
+
+

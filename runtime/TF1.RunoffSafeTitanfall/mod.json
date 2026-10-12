@@ -1,0 +1,14 @@
+{
+  "Name": "TF1.RunoffSafeTitanfall",
+  "Version": "0.1.0",
+  "LoadPriority": 100,
+  "Scripts": [
+    {
+      "Path": "sv_runoff_safe_titanfall.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "RunoffSafeTitanfall_Init"
+      }
+    }
+  ]
+}

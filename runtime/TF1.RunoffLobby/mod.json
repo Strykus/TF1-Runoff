@@ -1,0 +1,6 @@
+{
+  "Name": "TF1.RunoffLobby",
+  "Version": "0.1.0",
+  "LoadPriority": 200,
+  "Description": "Runoff private-lobby map compatibility for supported native modes; Frontier Defense excluded."
+}

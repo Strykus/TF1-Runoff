@@ -1,0 +1,15 @@
+{
+  "Name": "TF1.RunoffMinimap",
+  "Version": "0.1.0",
+  "LoadPriority": 66,
+  "Description": "Original Runoff overview in the native Titanfall 2 radar.",
+  "Scripts": [
+    {
+      "Path": "cl_runoff_minimap.nut",
+      "RunOn": "CLIENT && MP",
+      "ClientCallback": {
+        "After": "RunoffMinimap_Init"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "Name": "TF1.Runoff",
+  "Description": "Titanfall 1 Runoff geometry and material compatibility preview",
+  "Version": "0.1.0",
+  "LoadPriority": 10,
+  "Scripts": [
+    {
+      "Path": "tf1_runoff_register.nut",
+      "RunOn": "UI || MP",
+      "UICallback": {
+        "After": "TF1_Runoff_Register"
+      },
+      "ClientCallback": {
+        "After": "TF1_Runoff_Register"
+      },
+      "ServerCallback": {
+        "After": "TF1_Runoff_Register"
+      }
+    }
+  ]
+}

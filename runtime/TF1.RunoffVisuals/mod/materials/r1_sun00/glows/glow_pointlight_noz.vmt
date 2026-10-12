@@ -1,0 +1,11 @@
+"spritecard"
+{
+	"$basetexture" "r1_sun00\glows\glow_pointlight"
+	//$additive 1
+	$screenblend 1
+	$muloutputbyalpha 1
+
+	$ignorez 1
+	$depthblend 0
+
+}

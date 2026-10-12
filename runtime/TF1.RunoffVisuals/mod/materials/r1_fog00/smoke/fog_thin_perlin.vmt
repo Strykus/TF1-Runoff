@@ -1,0 +1,8 @@
+"SpriteCard"
+{
+	$basetexture "r1_fog00/smoke/fog_thin_perlin"
+	$vertexcolor 1
+	$vertexalpha 1
+	$translucent 1
+	$vertexFogAmount 1
+}

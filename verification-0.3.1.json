@@ -1,0 +1,18 @@
+{
+  "reconstructedFiles": 878,
+  "allSHA256Verified": true,
+  "freshProfileInstallationVerified": true,
+  "diagnosticToolsIncluded": false,
+  "titanNavConnectionsPreserved": true,
+  "bspSHA256": "048099c4d8ce86e58313e914001d628494443d10d789cdf6be7b2051792fa405",
+  "largeNavSHA256": "6a6f3521231a189d5f7129af787933f7e5b93dfcf8fda95c4c38f695b9ccad61",
+  "visualRuntimeTest": {
+    "mode": "at",
+    "separateDedicatedServerAndClient": true,
+    "fogEmitters": 94,
+    "banks": 3,
+    "aiUnits": 8
+  },
+  "newTitanConnectionTraversalVerified": false,
+  "listenServerCrashResolved": false
+}

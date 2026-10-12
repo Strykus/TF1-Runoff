@@ -1,0 +1,22 @@
+{
+  "Name": "TF1.RunoffAtmosphere",
+  "Description": "Original TF1 Runoff sky and scripted Redeye/Birmingham flybys. Local converted assets.",
+  "Version": "0.1.0",
+  "LoadPriority": 20,
+  "Scripts": [
+    {
+      "Path": "cl_tf1_runoff_atmosphere.nut",
+      "RunOn": "CLIENT && MP",
+      "ClientCallback": {
+        "After": "TF1_Runoff_Atmosphere_ClientInit"
+      }
+    },
+    {
+      "Path": "sv_tf1_runoff_atmosphere.nut",
+      "RunOn": "SERVER && MP",
+      "ServerCallback": {
+        "After": "TF1_Runoff_Atmosphere_ServerInit"
+      }
+    }
+  ]
+}

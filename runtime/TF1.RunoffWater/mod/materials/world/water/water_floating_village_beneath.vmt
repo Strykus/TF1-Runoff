@@ -1,0 +1,18 @@
+"Refract"
+{
+ "$normalmap" "world/water/water_floating_village_nml"
+ "$refractamount" "0.035"
+ "$refracttint" "[0.38 0.32 0.19]"
+ "$nocull" "1"
+ "$translucent" "1"
+ "$surfaceprop" "water"
+ "Proxies"
+ {
+  "TextureScroll"
+  {
+   "texturescrollvar" "$bumptransform"
+   "texturescrollrate" "0.02"
+   "texturescrollangle" "25"
+  }
+ }
+}

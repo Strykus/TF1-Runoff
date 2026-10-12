@@ -1,0 +1,18 @@
+{
+  "Postload": {
+    "tf1_runoff_ps_skyalpha_native.rpak": "mp_lf_deck.rpak",
+    "tf1_runoff_ps_skyalpha_normalxyz_world.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_ps_skyalpha_native.rpak",
+    "tf1_runoff_world_native.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_white_wall_nmc.rpak",
+    "tf1_runoff_ps_normalxyz_model.rpak": "mp_lf_deck.rpak",
+    "tf1_runoff_model_native.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_fence_frame_reflection.rpak",
+    "tf1_runoff_white_wall_nmc.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_ps_skyalpha_normalxyz_world.rpak",
+    "tf1_runoff_fence_envtint.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_ps_normalxyz_model.rpak",
+    "tf1_runoff_shadow_fill.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_fence_envtint.rpak",
+    "tf1_runoff_fence_frame_reflection.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_shadow_fill.rpak",
+    "tf1_runoff_billboard_labels.rpak": "./TF1MapLab\\mods\\TF1.RunoffNative\\paks\\tf1_runoff_model_native.rpak"
+  },
+  "Aliases": {
+    "mp_tf1_runoff.rpak": "mp_lf_deck.rpak",
+    "mp_tf1_runoff_loadscreen.rpak": "mp_lf_deck_loadscreen.rpak"
+  }
+}

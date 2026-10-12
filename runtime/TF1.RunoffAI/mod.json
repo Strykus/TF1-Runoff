@@ -1,0 +1,6 @@
+{
+  "Name": "TF1.RunoffAI",
+  "Description": "Runoff infantry, Reaper and Titan navigation, including both repaired Titan connections.",
+  "Version": "0.1.0",
+  "LoadPriority": 40
+}

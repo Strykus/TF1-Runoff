@@ -1,0 +1,24 @@
+{
+  "Name": "TF1.RunoffVisuals",
+  "Version": "0.1.0",
+  "LoadPriority": 112,
+  "RequiredOnClient": true,
+  "Description": "Runoff soft lighting, original sun and ground fog; runtime assets only.",
+  "Scripts": [
+    {
+      "Path": "cl_runoff_soft_lighting.nut",
+      "RunOn": "CLIENT && MP",
+      "ClientCallback": {
+        "After": "RunoffSoftLighting_Init",
+        "Destroy": "RunoffSoftLighting_Shutdown"
+      }
+    },
+    {
+      "Path": "cl_runoff_ground_fog.nut",
+      "RunOn": "CLIENT && MP",
+      "ClientCallback": {
+        "After": "RunoffGroundFog_Init"
+      }
+    }
+  ]
+}

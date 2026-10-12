@@ -1,0 +1,2 @@
+global function RunoffReapers_Enabled
+bool function RunoffReapers_Enabled(){return GetConVarInt("runoff_reapers_enabled")==1;}

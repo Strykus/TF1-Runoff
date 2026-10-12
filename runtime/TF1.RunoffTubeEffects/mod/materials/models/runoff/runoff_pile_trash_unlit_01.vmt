@@ -1,0 +1,11 @@
+"UnLitGeneric"
+{
+	"$nocull" "1"
+	"$vertexcolor" "1"
+	"$vertcoloristint" "1"
+	"$vertexalpha" "1"
+
+	"$surfaceprop" "plastic"
+	"$basetexture" "models\angel_city\ground_pile_trash_01_col"
+	"$alphatest" "1"
+}
