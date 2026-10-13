@@ -1,0 +1,554 @@
+{
+  "northstar_version": "1.31.13",
+  "files": [
+    {
+      "target": "mod/scripts/vscripts/gamemodes/_ai_gamemodes.gnut",
+      "source": "Northstar.CustomServers/mod/scripts/vscripts/gamemodes/_ai_gamemodes.gnut",
+      "source_sha256": "c2bada439c1dd85433395619ababbce40f4b411783c0772e4a379e624e53600f",
+      "source_normalized_sha256": "c2bada439c1dd85433395619ababbce40f4b411783c0772e4a379e624e53600f",
+      "source_eol": "lf",
+      "sha256": "4acf18f645b92bbb62bf44e3d10203dd10d8f1009aa8fa325af08820310570b5",
+      "size": 7206,
+      "ops": [
+        [
+          "copy",
+          0,
+          2709
+        ],
+        [
+          "add",
+          "IGlmKEdldE1hcE5hbWUoKT09Im1wX3RmMV9ydW5vZmYiJiYhUnVub2ZmUmVhcGVyc19FbmFibGVkKCkpcmV0dXJuOwoK"
+        ],
+        [
+          "copy",
+          2709,
+          201
+        ],
+        [
+          "add",
+          "CWlmKEdldE1hcE5hbWUoKT09Im1wX3RmMV9ydW5vZmYiJiYhUnVub2ZmUmVhcGVyc19FbmFibGVkKCkpcmV0dXJuOwo="
+        ],
+        [
+          "copy",
+          2910,
+          4159
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/gamemodes/_gamemode_aitdm.nut",
+      "source": "Northstar.CustomServers/mod/scripts/vscripts/gamemodes/_gamemode_aitdm.nut",
+      "source_sha256": "051eeb0031c58c8c841065dc14861ea77eddca32823a6f41c1bafb2f12fba43b",
+      "source_normalized_sha256": "051eeb0031c58c8c841065dc14861ea77eddca32823a6f41c1bafb2f12fba43b",
+      "source_eol": "lf",
+      "sha256": "cbfcc1cc35a9ddae0442ece4c5ec5c9cc53cdaf36693a33ad0ceceeb37231b4e",
+      "size": 16488,
+      "ops": [
+        [
+          "copy",
+          0,
+          7941
+        ],
+        [
+          "add",
+          "CQlpZiAoIEdldE1hcE5hbWUoKT09Im1wX3RmMV9ydW5vZmYiID8gKFJ1bm9mZlJlYXBlcnNfRW5hYmxlZCgpKSA6IGZpbGUucmVhcGVyc1sgaW5kZXggXSApCg=="
+        ],
+        [
+          "copy",
+          7972,
+          613
+        ],
+        [
+          "add",
+          "CQkJCWlmICggR2V0TWFwTmFtZSgpPT0ibXBfdGYxX3J1bm9mZiIgPyBSYW5kb21JbnQoMik9PTEgOiBSYW5kb21JbnQoIHBvaW50cy5sZW4oKSApIT0wICkK"
+        ],
+        [
+          "copy",
+          8622,
+          7753
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/mp/_goblin_dropship.nut",
+      "source": "Northstar.CustomServers/mod/scripts/vscripts/mp/_goblin_dropship.nut",
+      "source_sha256": "fa5d1c7761bee9b3210d25d53024ccd7cc1245bd45df0e10f860e7fb71a638ee",
+      "source_normalized_sha256": "fa5d1c7761bee9b3210d25d53024ccd7cc1245bd45df0e10f860e7fb71a638ee",
+      "source_eol": "lf",
+      "sha256": "c1a7a98179fa2507065d6d6997acc0c7b28c2dee8e70e877ce62614ffa2bcd64",
+      "size": 25257,
+      "ops": [
+        [
+          "copy",
+          0,
+          529
+        ],
+        [
+          "add",
+          "IGFycmF5PFNwYXduUG9pbnRGUD4gcnVub2ZmU3Bhd25zCiBhcnJheTxzdHJpbmc+IHJ1bm9mZkFuaW1zCiBhcnJheTxEcm9wVGFibGU+IHJ1bm9mZkRyb3BzCg=="
+        ],
+        [
+          "copy",
+          529,
+          1079
+        ],
+        [
+          "add",
+          "CQlpZihHZXRNYXBOYW1lKCk9PSJtcF90ZjFfcnVub2ZmIil7dGhyZWFkIFJ1bm9mZkJ1aWxkRHJvcHNoaXBTcGF3bnMoKTtyZXR1cm47fQo="
+        ],
+        [
+          "copy",
+          1608,
+          562
+        ],
+        [
+          "add",
+          "CQlpZihHZXRNYXBOYW1lKCk9PSJtcF90ZjFfcnVub2ZmIikKICB7CiAgIGFycmF5PGVudGl0eT4gYXZhaWxhYmxlCiAgIGZvcihpbnQgaT0wO2k8ZmlsZS56aXBsaW5lRHJvcHNoaXBTcGF3bnMubGVuKCk7aSsrKQogICB7CiAgICBpbnQgbm9kZT1maWxlLnJ1bm9mZlNwYXduc1tpXS5ub2RlCiAgICBpZighKG5vZGUgaW4gbGV2ZWwuc3Bhd25Qb2ludHNJblVzZSl8fFRpbWUoKT5sZXZlbC5zcGF3blBvaW50c0luVXNlW25vZGVdKWF2YWlsYWJsZS5hcHBlbmQoZmlsZS56aXBsaW5lRHJvcHNoaXBTcGF3bnNbaV0pCiAgIH0KICAgcmV0dXJuIGF2YWlsYWJsZQogIH0KICByZXR1cm4gY2xvbmUgZmlsZS56aXBsaW5lRHJvcHNoaXBTcGF3bnMK"
+        ],
+        [
+          "copy",
+          2212,
+          1143
+        ],
+        [
+          "add",
+          "ICB7Cg=="
+        ],
+        [
+          "copy",
+          3355,
+          13
+        ],
+        [
+          "add",
+          "ICB9Cg=="
+        ],
+        [
+          "copy",
+          3368,
+          5156
+        ],
+        [
+          "add",
+          "Cg=="
+        ],
+        [
+          "copy",
+          8524,
+          127
+        ],
+        [
+          "add",
+          "CQlpZihHZXRNYXBOYW1lKCk9PSJtcF90ZjFfcnVub2ZmIikKICAgICAgICB7CiAgICAgICAgICAgIGlmKElzUG9pbnRPdXRPZkJvdW5kcyhwb3MrVmVjdG9yKDAsMCwxNikpfHxJc1BvaW50T3V0T2ZCb3VuZHMocG9zK1ZlY3RvcigwLDAsNjQpKSljb250aW51ZTsKICAgICAgICAgICAgaWYoTmF2TWVzaF9DbGFtcFBvaW50Rm9ySHVsbFdpdGhFeHRlbnRzKHBvcyxIVUxMX0hVTUFOLFZlY3RvcigzMiwzMiw2NCkpPT1udWxsKWNvbnRpbnVlOwogICAgICAgIH0K"
+        ],
+        [
+          "copy",
+          8651,
+          9179
+        ],
+        [
+          "add",
+          "CQlpZihHZXRNYXBOYW1lKCk9PSJtcF90ZjFfcnVub2ZmIikKICB7CiAgIGZvcihpbnQgcmk9MDtyaTxmaWxlLnJ1bm9mZlNwYXducy5sZW4oKTtyaSsrKQogICB7CiAgICBTcGF3blBvaW50RlAgY2FuZGlkYXRlPWZpbGUucnVub2ZmU3Bhd25zW3JpXQogICAgaWYoZmlsZS5ydW5vZmZBbmltc1tyaV09PWFuaW0mJkRpc3RhbmNlKGNhbmRpZGF0ZS5vcmlnaW4sVGFibGUub3JpZ2luKTwyJiZmYWJzKEFuZ2xlRGlmZihjYW5kaWRhdGUuYW5nbGVzLnksVGFibGUueWF3KSk8MSkKICAgIHtpZihjYW5kaWRhdGUubm9kZSBpbiBsZXZlbC5zcGF3blBvaW50c0luVXNlJiZUaW1lKCk8PWxldmVsLnNwYXduUG9pbnRzSW5Vc2VbY2FuZGlkYXRlLm5vZGVdKWNvbnRpbnVlOwogICAgIGxldmVsLnNwYXduUG9pbnRzSW5Vc2VbY2FuZGlkYXRlLm5vZGVdIDwtIFRpbWUoKSszMDsKICAgICBzcGF3blBvaW50LnZhbGlkPWNhbmRpZGF0ZS52YWxpZDtzcGF3blBvaW50Lm9yaWdpbj1jYW5kaWRhdGUub3JpZ2luO3NwYXduUG9pbnQuYW5nbGVzPWNhbmRpZGF0ZS5hbmdsZXM7c3Bhd25Qb2ludC5ub2RlPWNhbmRpZGF0ZS5ub2RlO1RhYmxlLmRyb3BUYWJsZS5ub2Rlcz1maWxlLnJ1bm9mZkRyb3BzW3JpXS5ub2RlcztUYWJsZS5kcm9wVGFibGUudmFsaWQ9dHJ1ZTticmVhazt9CiAgIH0KICB9CiAgZWxzZSBzcGF3blBvaW50ID0gR2V0U3Bhd25Qb2ludEZvclN0eWxlKCBmbGlnaHRQYXRoLCBUYWJsZSApCg=="
+        ],
+        [
+          "copy",
+          17888,
+          69
+        ],
+        [
+          "add",
+          "CQl7fQogIGlmKEdldE1hcE5hbWUoKT09Im1wX3RmMV9ydW5vZmYiKVNpZ25hbChUYWJsZSwiT25Ecm9wb2ZmIix7Z3V5cz1udWxsfSkK"
+        ],
+        [
+          "copy",
+          18018,
+          35
+        ],
+        [
+          "add",
+          "IGlmKEdldE1hcE5hbWUoKT09Im1wX3RmMV9ydW5vZmYiKXt9Cg=="
+        ],
+        [
+          "copy",
+          18053,
+          2126
+        ],
+        [
+          "add",
+          "ICB7fQo="
+        ],
+        [
+          "copy",
+          20179,
+          2260
+        ],
+        [
+          "add",
+          "CnZvaWQgZnVuY3Rpb24gUnVub2ZmQnVpbGREcm9wc2hpcFNwYXducygpCnsKIHdhaXQgMwoge30KIGFycmF5PGVudGl0eT4gcG9pbnRzPVNwYXduUG9pbnRzX0dldERyb3BQb2QoKQogZm9yZWFjaChlbnRpdHkgcG9pbnQgaW4gcG9pbnRzKQogewogIGJvb2wgZm91bmQ9ZmFsc2UKICBmb3JlYWNoKHN0cmluZyBhbmltIGluIEdldFJhbmRvbURyb3BzaGlwRHJvcG9mZkFuaW1zKCkpCiAgewogICBGbGlnaHRQYXRoIGZsaWdodFBhdGg9R2V0QW5hbHlzaXNGb3JNb2RlbChEUk9QU0hJUF9NT0RFTCxhbmltKQogICB2ZWN0b3Igb3JpZ2luPXBvaW50LkdldE9yaWdpbigpK0dldEFuYWx5c2lzT2Zmc2V0KGZsaWdodFBhdGgpCiAgIGZvcihpbnQgdHVybj0wO3R1cm48ODt0dXJuKyspCiAgIHsKICAgIGZsb2F0IHlhdz1GaXhZYXcocG9pbnQuR2V0QW5nbGVzKCkueSt0dXJuKjQ1KQogICAgdmVjdG9yIGNhbmRpZGF0ZT1vcmlnaW4KICAgIGlmKEFuYWx5c2lzSGFzUHJlcFNwYXducG9pbnRGdW5jKGZsaWdodFBhdGgpKQogICAgewogICAgIHZhciBwcmVwYXJlZD1SdW5BbmFseXNpc1ByZXBGdW5jKGZsaWdodFBhdGgsY2FuZGlkYXRlLHlhdykKICAgICBpZihwcmVwYXJlZCE9bnVsbCljYW5kaWRhdGU9ZXhwZWN0IHZlY3RvcihwcmVwYXJlZCkKICAgIH0KICAgIHRhYmxlPHN0cmluZyx0YWJsZTxzdHJpbmcsTm9kZUZQPiA+IG5vZGVzPURyb3BzaGlwRmluZERyb3BOb2RlcyhmbGlnaHRQYXRoLGNhbmRpZGF0ZSx5YXcsImJvdGgiLGZhbHNlLElzTGVnYWxGbGlnaHRQYXRoX092ZXJUaW1lLHRydWUpCiAgICBpZihub2Rlcy5sZW4oKSE9MCkKICAgIHsKICAgICBTcGF3blBvaW50RlAgc3Bhd24KICAgICBzcGF3bi52YWxpZD10cnVlO3NwYXduLm9yaWdpbj1jYW5kaWRhdGU7c3Bhd24uYW5nbGVzPVZlY3RvcigwLHlhdywwKTtzcGF3bi5ub2RlPUdldE5lYXJlc3ROb2RlVG9Qb3MocG9pbnQuR2V0T3JpZ2luKCkpCiAgICAgRHJvcFRhYmxlIGRyb3AKICAgICBkcm9wLm5vZGVzPW5vZGVzO2Ryb3AudmFsaWQ9dHJ1ZQogICAgIGVudGl0eSByZWY9Q3JlYXRlU2NyaXB0UmVmKGNhbmRpZGF0ZSxzcGF3bi5hbmdsZXMpCiAgICAgZmlsZS5ydW5vZmZTcGF3bnMuYXBwZW5kKHNwYXduKTtmaWxlLnJ1bm9mZkFuaW1zLmFwcGVuZChhbmltKTtmaWxlLnJ1bm9mZkRyb3BzLmFwcGVuZChkcm9wKQogICAgIGZpbGUuemlwbGluZURyb3BzaGlwU3Bhd25zLmFwcGVuZChyZWYpCiAgICAge30KICAgICBmb3VuZD10cnVlO2JyZWFrCiAgICB9CiAgICBXYWl0RnJhbWUoKQogICB9CiAgIGlmKGZvdW5kKWJyZWFrCiAgfQogIFdhaXRGcmFtZSgpCiB9CiB7fQp9Cgo="
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/lobby/sh_lobby.gnut",
+      "source": "Northstar.CustomServers/mod/scripts/vscripts/lobby/sh_lobby.gnut",
+      "source_sha256": "d007de3b629da73ef4177585d122c050cf1e94b10b360d0afe7f22173013909f",
+      "source_normalized_sha256": "d007de3b629da73ef4177585d122c050cf1e94b10b360d0afe7f22173013909f",
+      "source_eol": "lf",
+      "sha256": "cded53bbb524a5cdc680917aac69f77252a5565d935f72226f96fe66c228c242",
+      "size": 13344,
+      "ops": [
+        [
+          "copy",
+          0,
+          912
+        ],
+        [
+          "add",
+          "CQkibXBfbGZfdW1hIiwKICAgICAgICAibXBfY29saXNldW0iLAogICAgICAgICJtcF9jb2xpc2V1bV9jb2x1bW4iLAogICAgICAgICJtcF90ZjFfcnVub2ZmIgo="
+        ],
+        [
+          "copy",
+          926,
+          6700
+        ],
+        [
+          "add",
+          "IGlmICggUnVub2ZmTG9iYnlfTW9kZVN1cHBvcnRlZCggbW9kZU5hbWUgKSApCiB7CiAgaWYgKCAhbWFwcy5jb250YWlucyggIm1wX3RmMV9ydW5vZmYiICkgKW1hcHMuYXBwZW5kKCAibXBfdGYxX3J1bm9mZiIgKQogfQogZWxzZSBpZiAoIG1hcHMuY29udGFpbnMoICJtcF90ZjFfcnVub2ZmIiApICltYXBzLnJlbW92ZWJ5dmFsdWUoICJtcF90ZjFfcnVub2ZmIiApCgo="
+        ],
+        [
+          "copy",
+          7626,
+          3979
+        ],
+        [
+          "add",
+          "Ym9vbCBmdW5jdGlvbiBSdW5vZmZMb2JieV9Nb2RlU3VwcG9ydGVkKCBzdHJpbmcgbW9kZU5hbWUgKQp7CiBhcnJheTxzdHJpbmc+IHN1cHBvcnRlZCA9IFsgImFpdGRtIiwgImF0IiwgImNwIiwgImN0ZiIsICJmZmEiLCAibHRzIiwgIm1mZCIsICJwcyIsICJzcGVlZGJhbGwiLCAidGRtIiwgInR0ZG0iIF0KIHJldHVybiBzdXBwb3J0ZWQuY29udGFpbnMoIG1vZGVOYW1lICkKfQoK"
+        ],
+        [
+          "copy",
+          11605,
+          84
+        ],
+        [
+          "add",
+          "IGlmICggbWFwTmFtZSA9PSAibXBfdGYxX3J1bm9mZiIgKQogIHJldHVybiBSdW5vZmZMb2JieV9Nb2RlU3VwcG9ydGVkKCBtb2RlTmFtZSApCgo="
+        ],
+        [
+          "copy",
+          11689,
+          1069
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/ui/menu_lobby.nut",
+      "source": "Northstar.Client/mod/scripts/vscripts/ui/menu_lobby.nut",
+      "source_sha256": "167d14d9726f57fa8d2873f6a8c55c4965d0385d8d294baffb78fea902d62fd3",
+      "source_normalized_sha256": "167d14d9726f57fa8d2873f6a8c55c4965d0385d8d294baffb78fea902d62fd3",
+      "source_eol": "lf",
+      "sha256": "e49a6cbcb52903e9ec9c62d9aa668c02526f6829eb19b023d3444ac786468c5f",
+      "size": 49719,
+      "ops": [
+        [
+          "copy",
+          0,
+          16209
+        ],
+        [
+          "add",
+          "CVNldENvblZhckJvb2woICJuZXRfdXNlc29ja2V0c2Zvcmxvb3BiYWNrIiwgZmFsc2UgKQo="
+        ],
+        [
+          "copy",
+          16209,
+          1340
+        ],
+        [
+          "add",
+          "CQl7fQo="
+        ],
+        [
+          "copy",
+          17613,
+          12680
+        ],
+        [
+          "add",
+          "CQkJe30K"
+        ],
+        [
+          "copy",
+          30382,
+          12385
+        ],
+        [
+          "add",
+          "CQkJCXt9Cg=="
+        ],
+        [
+          "copy",
+          42856,
+          8
+        ],
+        [
+          "add",
+          "CQkJCXt9Cg=="
+        ],
+        [
+          "copy",
+          42967,
+          910
+        ],
+        [
+          "add",
+          "CXt9Cg=="
+        ],
+        [
+          "copy",
+          43933,
+          6105
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/ui/menu_map_select.nut",
+      "source": "Northstar.Client/mod/scripts/vscripts/ui/menu_map_select.nut",
+      "source_sha256": "efa2e9f90e6932dae6164aa3d6214d843030fe8a7fd4f252c9fa5177225889aa",
+      "source_normalized_sha256": "efa2e9f90e6932dae6164aa3d6214d843030fe8a7fd4f252c9fa5177225889aa",
+      "source_eol": "lf",
+      "sha256": "efabb86b23e29c395bcbcc2f72d8815db0daeb6fd2c9b14d5402837c7302b1aa",
+      "size": 13086,
+      "ops": [
+        [
+          "copy",
+          0,
+          5006
+        ],
+        [
+          "add",
+          "CWJvb2wgaXNSdW5vZmYgPSBtYXAgPT0gIm1wX3RmMV9ydW5vZmYiCgl2YXIgbm9ybWFsSW1hZ2UgPSBIdWRfR2V0Q2hpbGQoIGZpbGUubWVudSwgIk5leHRNYXBJbWFnZSIgKQoJdmFyIHJ1bm9mZkltYWdlID0gSHVkX0dldENoaWxkKCBmaWxlLm1lbnUsICJOZXh0UnVub2ZmTWFwSW1hZ2UiICkKCUh1ZF9TZXRWaXNpYmxlKCBub3JtYWxJbWFnZSwgIWlzUnVub2ZmICkKCUh1ZF9TZXRWaXNpYmxlKCBydW5vZmZJbWFnZSwgaXNSdW5vZmYgKQoJUnVpU2V0SW1hZ2UoIEh1ZF9HZXRSdWkoIGlzUnVub2ZmID8gcnVub2ZmSW1hZ2UgOiBub3JtYWxJbWFnZSApLCAiYmFzaWNJbWFnZSIsIEdldE1hcEltYWdlRm9yTWFwTmFtZSggbWFwICkgKQo="
+        ],
+        [
+          "copy",
+          5122,
+          849
+        ],
+        [
+          "add",
+          "CQlib29sIGlzUnVub2ZmID0gbmFtZSA9PSAibXBfdGYxX3J1bm9mZiIKCQl2YXIgcnVub2ZmSW1hZ2UgPSBIdWRfR2V0Q2hpbGQoIGVsZW1lbnQsICJSdW5vZmZNYXBJbWFnZSIgKQoJCUh1ZF9TZXRWaXNpYmxlKCBtYXBJbWFnZSwgIWlzUnVub2ZmICkKCQlIdWRfU2V0VmlzaWJsZSggcnVub2ZmSW1hZ2UsIGlzUnVub2ZmICkKCQlSdWlTZXRJbWFnZSggSHVkX0dldFJ1aSggaXNSdW5vZmYgPyBydW5vZmZJbWFnZSA6IG1hcEltYWdlICksICJiYXNpY0ltYWdlIiwgR2V0TWFwSW1hZ2VGb3JNYXBOYW1lKCBuYW1lICkgKQo="
+        ],
+        [
+          "copy",
+          6056,
+          6573
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/ui/menu_private_match.nut",
+      "source": "Northstar.Client/mod/scripts/vscripts/ui/menu_private_match.nut",
+      "source_sha256": "13603ebaf7a0adc95399ef96e65ea5228104a7431f24f20abfc3539b4eb8bfab",
+      "source_normalized_sha256": "13603ebaf7a0adc95399ef96e65ea5228104a7431f24f20abfc3539b4eb8bfab",
+      "source_eol": "lf",
+      "sha256": "61b949c4ccbdef849938fe44eb4363f1c232c18fe615fe08834eda5ea750c59a",
+      "size": 26979,
+      "ops": [
+        [
+          "copy",
+          0,
+          2265
+        ],
+        [
+          "add",
+          "CW1wX3RmMV9ydW5vZmYgPSAkImxvYWRzY3JlZW5zL21wX3RmMV9ydW5vZmZfbG9iYnkiLAoK"
+        ],
+        [
+          "copy",
+          2265,
+          15304
+        ],
+        [
+          "add",
+          "CXt9Cg=="
+        ],
+        [
+          "copy",
+          17628,
+          982
+        ],
+        [
+          "add",
+          "CWJvb2wgaXNSdW5vZmYgPSBtYXBOYW1lID09ICJtcF90ZjFfcnVub2ZmIgoJdmFyIHJ1bm9mZkltYWdlID0gSHVkX0dldENoaWxkKCBmaWxlLm1lbnUsICJOZXh0UnVub2ZmTWFwSW1hZ2UiICkKCUh1ZF9TZXRWaXNpYmxlKCBuZXh0TWFwSW1hZ2UsICFpc1J1bm9mZiApCglIdWRfU2V0VmlzaWJsZSggcnVub2ZmSW1hZ2UsIGlzUnVub2ZmICkKCVJ1aVNldEltYWdlKCBIdWRfR2V0UnVpKCBpc1J1bm9mZiA/IHJ1bm9mZkltYWdlIDogbmV4dE1hcEltYWdlICksICJiYXNpY0ltYWdlIiwgbWFwSW1hZ2UgKQo="
+        ],
+        [
+          "copy",
+          18703,
+          5252
+        ],
+        [
+          "add",
+          "CVNldENvblZhckJvb2woICJuZXRfdXNlc29ja2V0c2Zvcmxvb3BiYWNrIiwgZmFsc2UgKQo="
+        ],
+        [
+          "copy",
+          23955,
+          2778
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/ui/panel_mainmenu.nut",
+      "source": "Northstar.Client/mod/scripts/vscripts/ui/panel_mainmenu.nut",
+      "source_sha256": "5910161d88b93a19d35866ae35d10817389237e6cb3d0f8eae1e73b3a860653f",
+      "source_normalized_sha256": "5910161d88b93a19d35866ae35d10817389237e6cb3d0f8eae1e73b3a860653f",
+      "source_eol": "lf",
+      "sha256": "0cfb9b9fbf45a1833d7e2c185e6c9a29e5fdbe53e8a0369c75674f02cff10c75",
+      "size": 26979,
+      "ops": [
+        [
+          "copy",
+          0,
+          7392
+        ],
+        [
+          "add",
+          "CQl7fQo="
+        ],
+        [
+          "copy",
+          7428,
+          1075
+        ],
+        [
+          "add",
+          "CQkJCXt9CgkJCQl7fQoJCQkJe30KCQkJCXt9CgkJCQl7fQoJCQkJe30K"
+        ],
+        [
+          "copy",
+          8786,
+          1190
+        ],
+        [
+          "add",
+          "CQkJCXt9CgkJCQl7fQoJCQkJe30KCQkJCXt9CgkJCQl7fQoJCQkJe30KCQkJCXt9CgkJCQl7fQoJCQkJe30K"
+        ],
+        [
+          "copy",
+          10393,
+          2195
+        ],
+        [
+          "add",
+          "CQkJCXt9CgkJCQl7fQo="
+        ],
+        [
+          "copy",
+          12706,
+          3915
+        ],
+        [
+          "add",
+          "CQl7fQo="
+        ],
+        [
+          "copy",
+          16669,
+          1049
+        ],
+        [
+          "add",
+          "CQlTZXRDb25WYXJCb29sKCAibmV0X3VzZXNvY2tldHNmb3Jsb29wYmFjayIsIGZhbHNlICkK"
+        ],
+        [
+          "copy",
+          17718,
+          676
+        ],
+        [
+          "add",
+          "CQl7fQo="
+        ],
+        [
+          "copy",
+          18442,
+          9299
+        ]
+      ]
+    },
+    {
+      "target": "mod/scripts/vscripts/ui/_menus.nut",
+      "source": "Northstar.Client/mod/scripts/vscripts/ui/_menus.nut",
+      "source_sha256": "10c9c4f829d384b79359d5fedcae23e27f91c85a5bfec84cfb85f613ca91bce9",
+      "source_normalized_sha256": "10c9c4f829d384b79359d5fedcae23e27f91c85a5bfec84cfb85f613ca91bce9",
+      "source_eol": "lf",
+      "sha256": "00240429fa14426c0b8796f50c35a71170b009e022b055384bb4278e36e3afc5",
+      "size": 55818,
+      "ops": [
+        [
+          "copy",
+          0,
+          29150
+        ],
+        [
+          "add",
+          "CUFkZE1lbnUoICJQcml2YXRlTG9iYnlNZW51IiwgJCJyZXNvdXJjZS91aS9tZW51cy90ZjFfcnVub2ZmX3ByaXZhdGVfbG9iYnkubWVudSIsIEluaXRQcml2YXRlTWF0Y2hNZW51LCAiI1BSSVZBVEVfTUFUQ0giICkK"
+        ],
+        [
+          "copy",
+          29262,
+          26545
+        ]
+      ]
+    },
+    {
+      "target": "mod/resource/ui/menus/map_select.menu",
+      "source": "Northstar.Client/mod/resource/ui/menus/map_select.menu",
+      "source_sha256": "90019f96c3976c2cdcd44efda783ffdf1ee7ba3ffa1e552855f4e2bacf970ad9",
+      "source_normalized_sha256": "90019f96c3976c2cdcd44efda783ffdf1ee7ba3ffa1e552855f4e2bacf970ad9",
+      "source_eol": "lf",
+      "sha256": "4eab21666a8e458fe0cb68d6a7d91b57a9a22ce3b8f8d8d12dc35b8f704c780f",
+      "size": 7303,
+      "ops": [
+        [
+          "copy",
+          0,
+          3117
+        ],
+        [
+          "add",
+          "CQkJCgkJCXBpbl90b19zaWJsaW5nIE1hcERldGFpbHNQYW5lbAoJCQlwaW5fY29ybmVyX3RvX3NpYmxpbmcgVE9QX0xFRlQKCQkJcGluX3RvX3NpYmxpbmdfY29ybmVyIFRPUF9MRUZUCgkgfQoKCQlOZXh0UnVub2ZmTWFwSW1hZ2UKCSB7CgkJQ29udHJvbE5hbWUgUnVpUGFuZWwKCQl3aWRlIDUwMAoJCXRhbGwgMjg4CgkJdmlzaWJsZSAwCgkJc2NhbGVJbWFnZSAxCgkJenBvcyAwCgkJCgkJLy8gSHVkX0dldFJ1aSgpIHJlcXVpcmVzIHRoaXMgdG8gd29yawoJCXJ1aSAidWkvYmFzaWNfaW1hZ2UucnBhayIK"
+        ],
+        [
+          "copy",
+          3117,
+          3898
+        ]
+      ]
+    },
+    {
+      "target": "mod/resource/ui/menus/panels/map_grid_button.res",
+      "source": "Northstar.Client/mod/resource/ui/menus/panels/map_grid_button.res",
+      "source_sha256": "5f23d6697a1a42086a6f362778c7487e1ba3f5d572ee887e154569d94f7bd6a0",
+      "source_normalized_sha256": "5f23d6697a1a42086a6f362778c7487e1ba3f5d572ee887e154569d94f7bd6a0",
+      "source_eol": "lf",
+      "sha256": "818a230383303f95907b2abc029700df4def448379922aeac672732a11313094",
+      "size": 1464,
+      "ops": [
+        [
+          "copy",
+          0,
+          217
+        ],
+        [
+          "add",
+          "CX0KCglSdW5vZmZNYXBJbWFnZQoJewoJCUNvbnRyb2xOYW1lIFJ1aVBhbmVsCgkJd2lkZSAyODYKCQl0YWxsIDE2NQoJCXZpc2libGUgMAoJCXNjYWxlSW1hZ2UgMQoJCXpwb3MgMAoKCQkvLyBIdWRfR2V0UnVpKCkgcmVxdWlyZXMgdGhpcyB0byB3b3JrCgkJcnVpICJ1aS9iYXNpY19pbWFnZS5ycGFrIgo="
+        ],
+        [
+          "copy",
+          217,
+          1074
+        ]
+      ]
+    }
+  ]
+}

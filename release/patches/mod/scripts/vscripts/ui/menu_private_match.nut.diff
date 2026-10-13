@@ -1,0 +1,42 @@
+--- Northstar.Client/mod/scripts/vscripts/ui/menu_private_match.nut
++++ TF1.Runoff/mod/scripts/vscripts/ui/menu_private_match.nut
+@@ -90,6 +90,8 @@
+ 	mp_rise = $"loadscreens/mp_rise_lobby",
+ 	mp_lf_township = $"loadscreens/mp_lf_township_lobby",
+ 	mp_lf_uma = $"loadscreens/mp_lf_uma_lobby",
++	mp_tf1_runoff = $"loadscreens/mp_tf1_runoff_lobby",
++
+ 
+ 	// not really sure if this should be here, whatever
+ 	// might be good to make this modular in the future?
+@@ -453,7 +455,7 @@
+ 
+ function GameStartTime_Changed()
+ {
+-	printt( "GameStartTime_Changed", level.ui.gameStartTime )
++	{}
+ 	UpdateGameStartTimeCounter()
+ }
+ 
+@@ -502,8 +504,11 @@
+ 	var nextMapImage = Hud_GetChild( file.menu, "NextMapImage" )
+ 
+ 	asset mapImage = GetMapImageForMapName( mapName )
+-	RuiSetImage( Hud_GetRui( nextMapImage ), "basicImage", mapImage )
+-	Hud_Show( nextMapImage )
++	bool isRunoff = mapName == "mp_tf1_runoff"
++	var runoffImage = Hud_GetChild( file.menu, "NextRunoffMapImage" )
++	Hud_SetVisible( nextMapImage, !isRunoff )
++	Hud_SetVisible( runoffImage, isRunoff )
++	RuiSetImage( Hud_GetRui( isRunoff ? runoffImage : nextMapImage ), "basicImage", mapImage )
+ 
+ 	Hud_SetText( file.nextMapNameLabel, GetMapDisplayName( mapName ) )
+ }
+@@ -703,6 +708,7 @@
+ {
+ 	ShowPrivateMatchConnectDialog()
+ 	ClientCommand( "match_playlist private_match" )
++	SetConVarBool( "net_usesocketsforloopback", false )
+ 	ClientCommand( "StartPrivateMatchSearch" )
+ }
+ 

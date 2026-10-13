@@ -1,0 +1,11 @@
+--- Northstar.Client/mod/scripts/vscripts/ui/_menus.nut
++++ TF1.Runoff/mod/scripts/vscripts/ui/_menus.nut
+@@ -1011,7 +1011,7 @@
+ 	AddMenu( "CallsignIconSelectMenu", $"resource/ui/menus/callsigniconselect.menu", InitCallsignIconSelectMenu )
+ 	AddMenu( "BoostStoreMenu", $"resource/ui/menus/booststore.menu", InitBoostStoreMenu )
+ 
+-	AddMenu( "PrivateLobbyMenu", $"resource/ui/menus/private_lobby.menu", InitPrivateMatchMenu, "#PRIVATE_MATCH" )
++	AddMenu( "PrivateLobbyMenu", $"resource/ui/menus/tf1_runoff_private_lobby.menu", InitPrivateMatchMenu, "#PRIVATE_MATCH" )
+ 	AddMenu( "MapsMenu", $"resource/ui/menus/map_select.menu", InitMapsMenu )
+ 	AddMenu( "ModesMenu", $"resource/ui/menus/mode_select.menu", InitModesMenu )
+ 	AddMenu( "MatchSettingsMenu", $"resource/ui/menus/match_settings.menu", InitMatchSettingsMenu )

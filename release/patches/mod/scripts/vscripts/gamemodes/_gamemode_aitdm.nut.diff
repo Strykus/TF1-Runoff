@@ -1,0 +1,20 @@
+--- Northstar.CustomServers/mod/scripts/vscripts/gamemodes/_gamemode_aitdm.nut
++++ TF1.Runoff/mod/scripts/vscripts/gamemodes/_gamemode_aitdm.nut
+@@ -291,7 +291,7 @@
+ 		int reaperCount = GetNPCArrayEx( "npc_super_spectre", team, -1, < 0, 0, 0 >, -1 ).len()
+ 
+ 		// REAPERS
+-		if ( file.reapers[ index ] )
++		if ( GetMapName()=="mp_tf1_runoff" ? (RunoffReapers_Enabled()) : file.reapers[ index ] )
+ 		{
+ 			array<entity> points = SpawnPoints_GetDropPod()
+ 			if ( reaperCount < file.reapersPerTeam )
+@@ -310,7 +310,7 @@
+ 			// Prefer dropship when spawning grunts
+ 			if ( ent == "npc_soldier" && points.len() != 0 )
+ 			{
+-				if ( RandomInt( points.len() ) )
++				if ( GetMapName()=="mp_tf1_runoff" ? RandomInt(2)==1 : RandomInt( points.len() )!=0 )
+ 				{
+ 					entity node = points[ GetSpawnPointIndex( points, team ) ]
+ 					waitthread Aitdm_SpawnDropShip( node, team )

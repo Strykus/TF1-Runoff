@@ -1,0 +1,22 @@
+--- Northstar.Client/mod/resource/ui/menus/panels/map_grid_button.res
++++ TF1.Runoff/mod/resource/ui/menus/panels/map_grid_button.res
+@@ -11,6 +11,19 @@
+ 
+ 		// Hud_GetRui() requires this to work
+ 		rui "ui/basic_menu_image.rpak"
++	}
++
++	RunoffMapImage
++	{
++		ControlName RuiPanel
++		wide 286
++		tall 165
++		visible 0
++		scaleImage 1
++		zpos 0
++
++		// Hud_GetRui() requires this to work
++		rui "ui/basic_image.rpak"
+ 	}
+ 
+ 	MapName

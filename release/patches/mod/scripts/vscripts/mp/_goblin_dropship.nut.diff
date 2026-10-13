@@ -1,0 +1,160 @@
+--- Northstar.CustomServers/mod/scripts/vscripts/mp/_goblin_dropship.nut
++++ TF1.Runoff/mod/scripts/vscripts/mp/_goblin_dropship.nut
+@@ -22,6 +22,9 @@
+ struct
+ {
+ 	array<entity> ziplineDropshipSpawns
++ array<SpawnPointFP> runoffSpawns
++ array<string> runoffAnims
++ array<DropTable> runoffDrops
+ 
+ 	table<var, var> dropshipSound = {
+ 		[TEAM_IMC] = {
+@@ -60,6 +63,7 @@
+ #if MP
+ 	void function BuildZiplineDropshipSpawnPoints()
+ 	{
++		if(GetMapName()=="mp_tf1_runoff"){thread RunoffBuildDropshipSpawns();return;}
+ 		array<entity> spawnPoints = SpawnPoints_GetDropPod()
+ 		file.ziplineDropshipSpawns = []
+ 
+@@ -76,7 +80,17 @@
+ 	// Function returns an array of level droppod spawns that have been pretested to ensure they have the space for zipline deployments.
+ 	array<entity> function GetZiplineDropshipSpawns()
+ 	{
+-		return clone file.ziplineDropshipSpawns
++		if(GetMapName()=="mp_tf1_runoff")
++  {
++   array<entity> available
++   for(int i=0;i<file.ziplineDropshipSpawns.len();i++)
++   {
++    int node=file.runoffSpawns[i].node
++    if(!(node in level.spawnPointsInUse)||Time()>level.spawnPointsInUse[node])available.append(file.ziplineDropshipSpawns[i])
++   }
++   return available
++  }
++  return clone file.ziplineDropshipSpawns
+ 	}
+ #endif //MP
+ 
+@@ -105,7 +119,9 @@
+ 	if ( !ignoreCollision )
+ 	{
+ 		if ( !legalFlightFunc( flightPath, origin, forward, right, FLIGHT_PATH_DEBUG && !IsActiveNodeAnalysis() ) )
++  {
+ 			return {}
++  }
+ 	}
+ 
+ 	Point deployPoint = GetPreviewPoint( flightPath )
+@@ -240,6 +256,7 @@
+ 
+ 	array<vector> neighborPositions = NavMesh_GetNeighborPositions( GetNodePos( node ), HULL_HUMAN, 20 )
+ 
++
+ 	if ( amortize )
+ 		WaitFrame()
+ 
+@@ -247,6 +264,11 @@
+ 	int uniqueID = -2
+ 	foreach ( pos in neighborPositions )
+ 	{
++		if(GetMapName()=="mp_tf1_runoff")
++        {
++            if(IsPointOutOfBounds(pos+Vector(0,0,16))||IsPointOutOfBounds(pos+Vector(0,0,64)))continue;
++            if(NavMesh_ClampPointForHullWithExtents(pos,HULL_HUMAN,Vector(32,32,64))==null)continue;
++        }
+ 		NodeFP attachPoint
+ 		attachPoint.origin = pos
+ 		attachPoint.uniqueID = uniqueID
+@@ -603,7 +625,18 @@
+ 			}
+ 		}
+ 
+-		spawnPoint = GetSpawnPointForStyle( flightPath, Table )
++		if(GetMapName()=="mp_tf1_runoff")
++  {
++   for(int ri=0;ri<file.runoffSpawns.len();ri++)
++   {
++    SpawnPointFP candidate=file.runoffSpawns[ri]
++    if(file.runoffAnims[ri]==anim&&Distance(candidate.origin,Table.origin)<2&&fabs(AngleDiff(candidate.angles.y,Table.yaw))<1)
++    {if(candidate.node in level.spawnPointsInUse&&Time()<=level.spawnPointsInUse[candidate.node])continue;
++     level.spawnPointsInUse[candidate.node] <- Time()+30;
++     spawnPoint.valid=candidate.valid;spawnPoint.origin=candidate.origin;spawnPoint.angles=candidate.angles;spawnPoint.node=candidate.node;Table.dropTable.nodes=file.runoffDrops[ri].nodes;Table.dropTable.valid=true;break;}
++   }
++  }
++  else spawnPoint = GetSpawnPointForStyle( flightPath, Table )
+ 
+ 		if ( spawnPoint.valid )
+ 			break
+@@ -611,11 +644,13 @@
+ 
+ 	if ( !spawnPoint.valid )
+ 	{
+-		printt( "Couldn't find good spawn location for dropship" )
++		{}
++  if(GetMapName()=="mp_tf1_runoff")Signal(Table,"OnDropoff",{guys=null})
+ 		return
+ 	}
+ 
+ 	Table.success = true
++ if(GetMapName()=="mp_tf1_runoff"){}
+ 
+ 	entity ref = CreateScriptRef()
+ 	if ( Table.forcedPosition )
+@@ -696,6 +731,7 @@
+ 	if ( !wasPlayerOwned || IsValidPlayer( owner ) )
+ 	{
+ 		guys = CreateNPCSForDropship( dropship, Table.npcSpawnFuncs, side )
++  {}
+ 
+ 		foreach ( guy in guys )
+ 		{
+@@ -777,3 +813,47 @@
+ 
+ 	return file.dropshipSound[ team ][ animation ]
+ }
++
++void function RunoffBuildDropshipSpawns()
++{
++ wait 3
++ {}
++ array<entity> points=SpawnPoints_GetDropPod()
++ foreach(entity point in points)
++ {
++  bool found=false
++  foreach(string anim in GetRandomDropshipDropoffAnims())
++  {
++   FlightPath flightPath=GetAnalysisForModel(DROPSHIP_MODEL,anim)
++   vector origin=point.GetOrigin()+GetAnalysisOffset(flightPath)
++   for(int turn=0;turn<8;turn++)
++   {
++    float yaw=FixYaw(point.GetAngles().y+turn*45)
++    vector candidate=origin
++    if(AnalysisHasPrepSpawnpointFunc(flightPath))
++    {
++     var prepared=RunAnalysisPrepFunc(flightPath,candidate,yaw)
++     if(prepared!=null)candidate=expect vector(prepared)
++    }
++    table<string,table<string,NodeFP> > nodes=DropshipFindDropNodes(flightPath,candidate,yaw,"both",false,IsLegalFlightPath_OverTime,true)
++    if(nodes.len()!=0)
++    {
++     SpawnPointFP spawn
++     spawn.valid=true;spawn.origin=candidate;spawn.angles=Vector(0,yaw,0);spawn.node=GetNearestNodeToPos(point.GetOrigin())
++     DropTable drop
++     drop.nodes=nodes;drop.valid=true
++     entity ref=CreateScriptRef(candidate,spawn.angles)
++     file.runoffSpawns.append(spawn);file.runoffAnims.append(anim);file.runoffDrops.append(drop)
++     file.ziplineDropshipSpawns.append(ref)
++     {}
++     found=true;break
++    }
++    WaitFrame()
++   }
++   if(found)break
++  }
++  WaitFrame()
++ }
++ {}
++}
++

@@ -1,0 +1,23 @@
+{
+  "Postload": {
+    "tf1_runoff_ps_skyalpha_native.rpak": "mp_lf_deck.rpak",
+    "tf1_runoff_ps_skyalpha_normalxyz_world.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_ps_skyalpha_native.rpak",
+    "tf1_runoff_world_native.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_layer_xyz.rpak",
+    "tf1_runoff_ps_normalxyz_model.rpak": "mp_lf_deck.rpak",
+    "tf1_runoff_model_native.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_fence_frame_reflection.rpak",
+    "tf1_runoff_white_wall_nmc.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_ps_skyalpha_normalxyz_world.rpak",
+    "tf1_runoff_fence_envtint.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_ps_normalxyz_model.rpak",
+    "tf1_runoff_shadow_fill.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_fence_envtint.rpak",
+    "tf1_runoff_fence_frame_reflection.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_shadow_fill.rpak",
+    "tf1_runoff_billboard_labels.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_model_native.rpak",
+    "tf1_runoff_minimap.rpak": "mp_lf_deck.rpak",
+    "tf1_runoff_oil_water.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_world_native.rpak",
+    "tf1_runoff_preview.rpak": "ui.rpak",
+    "tf1_runoff_source_nmc_world.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_white_wall_nmc.rpak",
+    "tf1_runoff_layer_xyz.rpak": "./R2Northstar\\mods\\TF1.Runoff\\paks\\tf1_runoff_source_nmc_world.rpak"
+  },
+  "Aliases": {
+    "mp_tf1_runoff.rpak": "mp_lf_deck.rpak",
+    "mp_tf1_runoff_loadscreen.rpak": "tf1_runoff_loadscreen.rpak"
+  }
+}

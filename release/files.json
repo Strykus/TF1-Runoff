@@ -1,0 +1,661 @@
+{
+  "version": "0.3.3",
+  "mod": "TF1.Runoff",
+  "northstar_version": "1.31.13",
+  "merged_mods": [
+    "TF1.Runoff",
+    "TF1.RunoffAtmosphere",
+    "TF1.RunoffNative",
+    "TF1.RunoffAI",
+    "TF1.RunoffTubeEffects",
+    "TF1.RunoffMinimap",
+    "TF1.RunoffWater",
+    "Runoff.PipeAudioPlayback",
+    "TF1.RunoffSafeTitanfall",
+    "TF1.RunoffVisuals",
+    "Runoff.ReaperRoutes",
+    "TF1.RunoffLobby"
+  ],
+  "files": [
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1406,
+      "sha256": "9dee7e75e9769eacc891947d45c8d852e1a8d0dfa4ef5116835b92ff6ab1827a"
+    },
+    {
+      "path": "Install-Runoff.cmd",
+      "bytes": 97,
+      "sha256": "1db520e378fae54783b6c1f4ac9461edc74e936c67e115c1f626f15ddea328ad"
+    },
+    {
+      "path": "Install-Runoff.exe",
+      "bytes": 9962079,
+      "sha256": "1e7cf1a3bfb06b19a27384df12b72292dab010f3c2abaac3e0b08086b1028df3"
+    },
+    {
+      "path": "Install-Runoff.ps1",
+      "bytes": 922,
+      "sha256": "6a0d4b0540152a6c80b439163059a02539a67c56013b4fa80f2005a15c0d13c3"
+    },
+    {
+      "path": "Install-Runoff.py",
+      "bytes": 6953,
+      "sha256": "39239afae011bd3e15cb8abbcc3fd50f87e68b4d0165e461db9898f69cd6d657"
+    },
+    {
+      "path": "licenses/0-LICENSE.txt",
+      "bytes": 35407,
+      "sha256": "935cf13e19f8c31b497d20b05d73623431a226b230c3599bc30fa3348979bc68"
+    },
+    {
+      "path": "licenses/cffi-2.1.1.dist-info/1-LICENSE",
+      "bytes": 1123,
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    {
+      "path": "licenses/cffi-2.1.1.dist-info/18-LICENSE",
+      "bytes": 1123,
+      "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63"
+    },
+    {
+      "path": "licenses/common/8-COPYING",
+      "bytes": 704,
+      "sha256": "aea41976c720f91bd19725c16916a1ace40eb1ea42620d340e587a5de4bbcea0"
+    },
+    {
+      "path": "licenses/fft/17-LICENSE.md",
+      "bytes": 1523,
+      "sha256": "8db000e158c162e7249787852d8c69764706502ccee725c06641b31c1e95c8af"
+    },
+    {
+      "path": "licenses/linalg/16-LICENSE.txt",
+      "bytes": 2314,
+      "sha256": "19060ef465e1797d682ee0fc3081bd25ab1395e995e43d25c9d13c95d9a3cd6b"
+    },
+    {
+      "path": "licenses/NorthstarMods/LICENSE",
+      "bytes": 1068,
+      "sha256": "28495422c9eb66888afb82c46b0c1294930e866d4648aaa0e43ee4dde442fddb"
+    },
+    {
+      "path": "licenses/npysort/7-LICENSE.md",
+      "bytes": 1542,
+      "sha256": "a732977853530066790c42817087f4829b518dd98d340c916acbfd227e39d3cb"
+    },
+    {
+      "path": "licenses/numpy/2-LICENSE",
+      "bytes": 1616,
+      "sha256": "d78dbb208b80d92b4d333e41a4baae50d12444f46e53199fa7726a91de6e2da7"
+    },
+    {
+      "path": "licenses/numpy/3-LICENSE.md",
+      "bytes": 3582,
+      "sha256": "b4bc2f4fa1c95778f1ed3dd8f14706bece399475b978f9f34b5d3cd72521b48a"
+    },
+    {
+      "path": "licenses/numpy/9-LICENSE.txt",
+      "bytes": 1039,
+      "sha256": "d544761558b510866c21f7e8a2d5716fca76e0b98117e3b6b86314db7244d150"
+    },
+    {
+      "path": "licenses/numpy-2.5.3.dist-info/1-LICENSE.txt",
+      "bytes": 45831,
+      "sha256": "a804dff0ead9fadc5293456410bcbfc32bf024be9c4513459663fb7b442d2341"
+    },
+    {
+      "path": "licenses/pycparser-3.11.dist-info/19-LICENSE",
+      "bytes": 1543,
+      "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+    },
+    {
+      "path": "licenses/pycparser-3.11.dist-info/2-LICENSE",
+      "bytes": 1543,
+      "sha256": "0a9e78156ae8b96caf1b4f11ac2df424b83de29736f9e757630548a6272fdf90"
+    },
+    {
+      "path": "licenses/pyinstaller-6.22.3.dist-info/21-COPYING.txt",
+      "bytes": 32604,
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64"
+    },
+    {
+      "path": "licenses/pyinstaller-6.22.3.dist-info/4-COPYING.txt",
+      "bytes": 32604,
+      "sha256": "0598064c7d2718e38d7914a7d08343b2fa008e3bea9ebba2aa7a6ffa5900dd64"
+    },
+    {
+      "path": "licenses/sounddevice-0.5.6.dist-info/20-LICENSE",
+      "bytes": 1063,
+      "sha256": "b6eea21bbafbaf7a2177e492f1be6b5efc6f4e708b1980773de51cdaa52f8211"
+    },
+    {
+      "path": "licenses/sounddevice-0.5.6.dist-info/3-LICENSE",
+      "bytes": 1063,
+      "sha256": "b6eea21bbafbaf7a2177e492f1be6b5efc6f4e708b1980773de51cdaa52f8211"
+    },
+    {
+      "path": "licenses/src/10-LICENSE.md",
+      "bytes": 2805,
+      "sha256": "cf5619f25b112d5ce7c896efffc8e610bcb345dfadcc19f2c1460aa48fff2c9e"
+    },
+    {
+      "path": "licenses/src/11-LICENSE.md",
+      "bytes": 2986,
+      "sha256": "92c10699884321f1c2947fe2a70ab23b0fbf1507f756d89dd08f38c61fc3d4fa"
+    },
+    {
+      "path": "licenses/src/12-LICENSE.md",
+      "bytes": 1176,
+      "sha256": "41190663b77bee5302386495a07b7eabfbfa571aa0ae2f11da6764162062fc4f"
+    },
+    {
+      "path": "licenses/src/13-LICENSE.md",
+      "bytes": 1540,
+      "sha256": "322ac46d870c8aeead6c53adcccc839296fb3c8e456eae155081297daf7f8013"
+    },
+    {
+      "path": "licenses/src/14-LICENSE.md",
+      "bytes": 1253,
+      "sha256": "28cad82ce1379dc529df30da78ec012d7d0d1d576b03ddcb93388aee53659f59"
+    },
+    {
+      "path": "licenses/src/15-LICENSE.md",
+      "bytes": 340,
+      "sha256": "454ec7350e478e037061850b67395753b425b1cb0a34bbc26290b020bf89d763"
+    },
+    {
+      "path": "licenses/src/4-LICENSE",
+      "bytes": 21155,
+      "sha256": "d208152e2777ffd0126eacc1bd21c0320d69e4e6b622d21a2a12a47e8ef73763"
+    },
+    {
+      "path": "licenses/src/5-dragon4_LICENSE.txt",
+      "bytes": 1441,
+      "sha256": "b0fd592d4ead563148e3977e7b589169d46a5ef2ff133c755a81af880a3fc919"
+    },
+    {
+      "path": "licenses/umath/6-LICENSE",
+      "bytes": 1573,
+      "sha256": "585483905b13d4b42f800c55ba99e89d6e2e33ccd5f503e201c07531d148ff41"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/pipe_spatial_audio.py",
+      "bytes": 3370,
+      "sha256": "b39e33ef11022fd41945a933873f6d5ca0c2a65158f2eaccb3f4db905d8e8c40"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/requirements.txt",
+      "bytes": 30,
+      "sha256": "e2c7beacf1afe103db4ba867400bbcf0125223751ac07827f72c97498196ce3f"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_metalwatertube_loop/runoff_emit_tubewater_loop_2ch_v2_01_lp.wav",
+      "bytes": 8834412,
+      "sha256": "a7ebffaacc8a9075faf8001d35e7683414088572d42a253c900a1583e0af5895"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_metalwatertube_loop.json",
+      "bytes": 107,
+      "sha256": "afeeda356fbd946d58dd0548c48c9e79880ce8537cb1fd9cbe583fb91bfbf64f"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_smallwatertube_loop/runoff_emit_tubewater_loop_2ch_v2_01_lp.wav",
+      "bytes": 8834412,
+      "sha256": "a7ebffaacc8a9075faf8001d35e7683414088572d42a253c900a1583e0af5895"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_smallwatertube_loop.json",
+      "bytes": 107,
+      "sha256": "60524388f8642d5007fa58e36b2a9559ecd00a031997ed8f630a7243203279e0"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_tubewater_loop_2ch_v2_01_lp.wav",
+      "bytes": 8834412,
+      "sha256": "a7ebffaacc8a9075faf8001d35e7683414088572d42a253c900a1583e0af5895"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_loop/runoff_emit_tubewater_loop_2ch_v2_01_lp.wav",
+      "bytes": 8834412,
+      "sha256": "a7ebffaacc8a9075faf8001d35e7683414088572d42a253c900a1583e0af5895"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_loop.json",
+      "bytes": 102,
+      "sha256": "f97c842509e842b09837b17bb810e52e72b73246ac00b021aefbd64777280942"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_start/runoff_emit_tubewater_start_2ch_v1_01.wav",
+      "bytes": 914608,
+      "sha256": "68a19fe7cce39612cdc02220f8b1fe05768fb6339613194c844fe823e6885e7c"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_start.json",
+      "bytes": 103,
+      "sha256": "7746eea7a3c4ba01ecc0c87f18386de7101b9ed7884171d7b8c7cc2a6fb0a2b2"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_stop/runoff_emit_tubewater_stop_2ch_v2_01.wav",
+      "bytes": 1102596,
+      "sha256": "d5bf9de0cf409432db6c96bc6f85bc841a0ca9b4e9e27bb503d77463f3d9c5d1"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/runoff_emit_watertube_stop.json",
+      "bytes": 102,
+      "sha256": "4dbfcac688ec07d86d6c2251ff33f981e3e60e2a11e4f8927de98f08a114e4d7"
+    },
+    {
+      "path": "mods/TF1.Runoff/audio/RunoffPipeAudio.exe",
+      "bytes": 23328189,
+      "sha256": "4fffa7215c23fc009069938d3542247df8a144abf7a881a0f5211ed7d92ac91d"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/graphs/mp_tf1_runoff.ain",
+      "bytes": 620602,
+      "sha256": "f3bb066f519c0b71249905e1524aab56e4a3f319fb9219d4cbf89f402db93268"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff.bsp",
+      "bytes": 491971820,
+      "sha256": "2adbecde4d3be8091265949ace781a70cb9a7d982c6b7c761368cc4dd5ed486e"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff.stbsp",
+      "bytes": 47372536,
+      "sha256": "ba636e20bde84eb25690ec2a7a713e9b8ff19e83bd5ad79a33ebbce4b52006ed"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff_env.ent",
+      "bytes": 1996,
+      "sha256": "a3d0ebf8c8fc2c741247b249ada3f8e83f91ad54df6aad83167e812cc286c94b"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff_fx.ent",
+      "bytes": 376,
+      "sha256": "1222109542ddc02b2e40533a77311897c230bb60863ebd16b9dc019b6a290da3"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff_script.ent",
+      "bytes": 3864,
+      "sha256": "99a9d02f72896b681396e2eb3fa2795fea78b92142a7aeb41aa212f3c29c0092"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff_snd.ent",
+      "bytes": 12,
+      "sha256": "08eb502c40c2e9470124fa40ee44317a47f3661da4dd97ea9639a112b59b0711"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff_spawn.ent",
+      "bytes": 75733,
+      "sha256": "f1e84a87d12f5d85912300fff83f0097ea7509bfb92e3c5aad6ac79f36a2d456"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/navmesh/mp_tf1_runoff_large.nm",
+      "bytes": 889216,
+      "sha256": "6a6f3521231a189d5f7129af787933f7e5b93dfcf8fda95c4c38f695b9ccad61"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/navmesh/mp_tf1_runoff_med_short.nm",
+      "bytes": 10835580,
+      "sha256": "af40bdf48f0915dda14ed0063f2297b28d9071205cb16f37b4a15bb0e3b9128f"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/navmesh/mp_tf1_runoff_medium.nm",
+      "bytes": 1096420,
+      "sha256": "bd3db7c97057ee4df8ced87ee7df575db2275593058efdb4b2d1c4dcc551039e"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/maps/navmesh/mp_tf1_runoff_small.nm",
+      "bytes": 33481788,
+      "sha256": "cff1c7f9e55b0bfb0c2ac505ffebcb935b64bac9947f540963d261aedcc922fd"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/particles/particles_manifest.txt",
+      "bytes": 164,
+      "sha256": "bb09b65c06d153a30ec98481ece5b76821e038aeb2dfc6ffdfc4b8849d68f878"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/particles/tf1_runoff_ground_fog.pcf",
+      "bytes": 19415,
+      "sha256": "62114888c597ce8a3fa999ad809c006460b4e8e987cd067a527d56b9017f2feb"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/particles/tf1_runoff_original_sun.pcf",
+      "bytes": 17321,
+      "sha256": "50c10700ba65e83bec3637ad3beedca572825c0f1ae541b10b2aba9cd1997cb4"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/particles/tf1_runoff_tubes.pcf",
+      "bytes": 54743,
+      "sha256": "41a2ba825c4d1e4ab75847db1e8347ad879e2d5e5f7138696f907505f9dbfddf"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/overviews/mp_tf1_runoff.txt",
+      "bytes": 231,
+      "sha256": "1bcbc77b989ad67582077c58f5131d1283914cef08255b4714294e2635024147"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_english.txt",
+      "bytes": 398,
+      "sha256": "5a7d41d07d80e068e5c0745a80c4bf6e1382d01a64c86a4d8a31ab31a2a7963e"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_french.txt",
+      "bytes": 396,
+      "sha256": "3e00f38de6d4e0ac33d4012ca21fd05a07ffad69ba88f4fd8fb7a016fb9ad1db"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_german.txt",
+      "bytes": 396,
+      "sha256": "65195a15453322af9815613856e716b309dacac8367ea250d9fee717885ff132"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_italian.txt",
+      "bytes": 398,
+      "sha256": "035eb381671aaadecac89d1100d48c2aded48f78b19392296416af31d7bacc25"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_japanese.txt",
+      "bytes": 400,
+      "sha256": "a98a39d16640f721b9fd958e28b17a65c257dc690fb8501fc66627560fd33fe0"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_mspanish.txt",
+      "bytes": 400,
+      "sha256": "a265701afa155abb73462a8d78569db78ada1c2fdbe612927ed05593f55c6a89"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_polish.txt",
+      "bytes": 396,
+      "sha256": "6ec0d0c059a8051d0711454264e2e4388ec68eca5c1c43d287d39346062111c3"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_portuguese.txt",
+      "bytes": 404,
+      "sha256": "0c331b448159485bc91909e6eaff92fc39a53231afe9bf25974b50b3bc56cb4d"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_russian.txt",
+      "bytes": 398,
+      "sha256": "ccec8feeffc299bc0a517fbd082f8a07186271305072197a01bf080a3a33146c"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_spanish.txt",
+      "bytes": 398,
+      "sha256": "3e206a17e355194532c91946a653a5d1cb27efe674608c2408e91ffe33d338ef"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_tchinese.txt",
+      "bytes": 400,
+      "sha256": "6e05a32d74b3e3202db97fae8a4359876ee00e8e6be9d8f3ae49630e91141873"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/tf1_runoff_names_ukrainian.txt",
+      "bytes": 402,
+      "sha256": "1cf1de19ce3cae60cb297e318160974c1d8467f60a788856f33079be39ef01b7"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/resource/ui/menus/tf1_runoff_private_lobby.menu",
+      "bytes": 432,
+      "sha256": "5eaa9caae007b7209884fe9d9f9a447947422ab9c7ec51129bccb602cce923c7"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_pipe_playback.nut",
+      "bytes": 1200,
+      "sha256": "5080663f7fc06753baa33118ae4cea942112c9a91a19251b8ba6830ccafe7976"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_ground_fog.nut",
+      "bytes": 11281,
+      "sha256": "0fa7f075eddf1e76a688c7129d773105440c707592dfb32dcfdd8c073d98499e"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_minimap.nut",
+      "bytes": 637,
+      "sha256": "a3b80289048652edfcdb3cce12cc0219304aa8ce0e8129473e8c1c549d1a750d"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_soft_lighting.nut",
+      "bytes": 1659,
+      "sha256": "30fe290a299761beef4d8590cbb10f3ccf8bddfd93469289f3d68cbbbdef0356"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_tube_effects.nut",
+      "bytes": 3278,
+      "sha256": "6a0f2e3e94f5bc25f3afad6680d41aea5958a6f21e177dee628e15f0560f2fad"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_tf1_runoff_atmosphere.nut",
+      "bytes": 5028,
+      "sha256": "eaf92d5cc94b212b351332333affc098547535d32e2ac4ba6c9ea4a13f2224fb"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/sh_runoff_reapers.gnut",
+      "bytes": 129,
+      "sha256": "f11dcb8b99e099af5da9677a47047fe7e54df3d66accab6dd365c893ece6b86a"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/sv_runoff_reapers.nut",
+      "bytes": 948,
+      "sha256": "3907f9f2a9ba4168269c6bd8b2693bedec19ac94c2eac032f9df6fde6a531fb3"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/sv_runoff_safe_titanfall.nut",
+      "bytes": 1556,
+      "sha256": "72743e6fe223b63413eb00bc9378e1c8daddacd82be76bd0db43c17f45f0f330"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/sv_tf1_runoff_atmosphere.nut",
+      "bytes": 287,
+      "sha256": "1cdbaace45123142d0d318f49b1ec6e355071abe0d655d9a5c002e1de5e29d34"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/tf1_runoff_register.nut",
+      "bytes": 120,
+      "sha256": "ae723bedac5deb0cd29b70aef18d1f298214ba47270792b19776fd4e211feaec"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/scripts/vscripts/ui_runoff_connect.nut",
+      "bytes": 614,
+      "sha256": "846067c0b15ec22c484771e18763ac9752bc16d4828fcc5b2f90dff5fd575094"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod.json",
+      "bytes": 2709,
+      "sha256": "b7f94be3dbd5d8045dec8b0e0df9f1b940d423f197ab8fc9cccb990963aad075"
+    },
+    {
+      "path": "mods/TF1.Runoff/northstar-patches.json",
+      "bytes": 19698,
+      "sha256": "fb0dbc2ac547ed567c7534077686700290498b9888ff0f973c3a05988c1c26fb"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/rpak.json",
+      "bytes": 1637,
+      "sha256": "1672e391218279813e5c07a440dd871f28fc1ca6631238abe4cca26a55338507"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_billboard_labels.rpak",
+      "bytes": 749140,
+      "sha256": "24612d620d4604d67e93db740e6315b2703f9f24bd2d77732b700b4c9e8431f9"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_billboard_labels.starpak",
+      "bytes": 7213240,
+      "sha256": "a47f68eddfe7652ca84d55f07f17b7c172f95ae348f0460f0c90f3f863d62917"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_fence_envtint.rpak",
+      "bytes": 643817,
+      "sha256": "2ee1dc40cd121087bc26ab482e505be90c401d9232c13ea5e3bfa5a714815c0c"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_fence_frame_reflection.rpak",
+      "bytes": 643162,
+      "sha256": "96a335736276051591375c27450710dbdc40cb43429e81320128cdf12bf685c6"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_layer_xyz.rpak",
+      "bytes": 11566612,
+      "sha256": "1e5eca37af97a3448832dd3b031eb330d969760ba7cbaafbab19ca2e64fd57e7"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_loadscreen.rpak",
+      "bytes": 2074631,
+      "sha256": "1cbcd4d2f457f399a11279976bd9f77d77472211c6cc15c7eb4f21bd3fc54719"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_minimap.rpak",
+      "bytes": 5593096,
+      "sha256": "92f0769bd2d222f3f9921e4969f4988681ce8609cb3674a02fa52c447c0e8476"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_model_native.rpak",
+      "bytes": 32929316,
+      "sha256": "545a06ccfd489789cd4046557418b4bfd4c2e17dc595a7f7b7ee78d92e770947"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_model_native.starpak",
+      "bytes": 1190415544,
+      "sha256": "ff2baf2d015088d016d86109e7738b75e9764cb473943d7c26af0468209d9db7"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_oil_water.rpak",
+      "bytes": 1605,
+      "sha256": "dc54b577bb0efd17eb7a15623c8b69465481bbe29821f3125fc576277b3b9edd"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_preview.rpak",
+      "bytes": 140043,
+      "sha256": "7fdd8ee87ebea441e19fc7516c125a967c92e79a2cf2ceaf866a9673e33e3e06"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_ps_normalxyz_model.rpak",
+      "bytes": 5837614,
+      "sha256": "78fea7e542c2d785fc128d5b68bd1e86d32d0f82937cb3e867e525b24eed3552"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_ps_skyalpha_native.rpak",
+      "bytes": 2634899,
+      "sha256": "d94f5144ecd6a48168150a48f0d1953d22e48ae74ec54ba5294469009586bb3d"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_ps_skyalpha_normalxyz_world.rpak",
+      "bytes": 1874177,
+      "sha256": "cf06b3ff6e164fcb878965771ecf9ffd987a929e62f17ea90447708b66cbecf5"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_shadow_fill.rpak",
+      "bytes": 1665311,
+      "sha256": "024114c463d35ac38a7a586ca9462f5407ce0e98aef94361238b820dc4c0a619"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_source_nmc_world.rpak",
+      "bytes": 7211492,
+      "sha256": "90b8a8872204d0cde3c71049cd6a1c1baba066bc2d7db615faf31c4e20ee583e"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_white_wall_nmc.rpak",
+      "bytes": 378787,
+      "sha256": "1c0efb28c1338dc7fe16be277fda705d314ef7d871e65f52e7bf7bba381077bf"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_world_native.rpak",
+      "bytes": 22548152,
+      "sha256": "d46f556f3db479429d675bb3cca9b40753b95ffbe8e8624594ca234d9a926ab5"
+    },
+    {
+      "path": "mods/TF1.Runoff/paks/tf1_runoff_world_native.starpak",
+      "bytes": 1491746696,
+      "sha256": "8c60481445ee2caa470adb9ab89d6e7adad22d78e7b7d9a3b09c7790d537dbd1"
+    },
+    {
+      "path": "mods/TF1.Runoff/vpk/client_mp_tf1_runoff.bsp.pak000_000.vpk",
+      "bytes": 624860000,
+      "sha256": "ecd67dc7c7e7997d744089d58736206ab5bfe923b98df8136ac4bd3cda8e582f"
+    },
+    {
+      "path": "mods/TF1.Runoff/vpk/englishclient_mp_tf1_runoff.bsp.pak000_dir.vpk",
+      "bytes": 194677,
+      "sha256": "f68ea0dc74eaac46ca6bbb199118d18edc40302101b5ce324f26d2db5cb70c72"
+    },
+    {
+      "path": "mods/TF1.Runoff/vpk/vpk.json",
+      "bytes": 65,
+      "sha256": "dcbd079cdf88c6f599539839a4d7d3df9b163971cbb3b8a660e8b0725c184580"
+    },
+    {
+      "path": "patches/mod/resource/ui/menus/map_select.menu.diff",
+      "bytes": 537,
+      "sha256": "e69e6d95b27bbaed4c3bf5d5f88bc1952c771f30605157beac394d63ae3ea06c"
+    },
+    {
+      "path": "patches/mod/resource/ui/menus/panels/map_grid_button.res.diff",
+      "bytes": 432,
+      "sha256": "dd4427d187cc5e47abf114a68b479a76da90b7b128e2fa38942d76a59c03a7a0"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/gamemodes/_ai_gamemodes.gnut.diff",
+      "bytes": 837,
+      "sha256": "2044a7893cea4260467222b3175c0267bfb07efb3618a276b6c0e52720625693"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/gamemodes/_gamemode_aitdm.nut.diff",
+      "bytes": 873,
+      "sha256": "3f1c4b30bb791d317729f283ab9c86779e91a33b1077babba8c9e0be373c731b"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/lobby/sh_lobby.gnut.diff",
+      "bytes": 1367,
+      "sha256": "19e70c347eb92819209393f27fd77c7a72f9df5246bb3cc90f22b4294ce8f4c7"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/mp/_goblin_dropship.nut.diff",
+      "bytes": 4935,
+      "sha256": "c0eb75829e274aa3075042de18789567986a183e17bb3f65e03fdf40723d07c9"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/ui/_menus.nut.diff",
+      "bytes": 820,
+      "sha256": "338f3e572ab2e8feec14e3ac5a03b6bb0e602151e2ee8e311307e4e1e29e4627"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/ui/menu_lobby.nut.diff",
+      "bytes": 1262,
+      "sha256": "f702930b7a59d9fbbee68e823fa1367bd52a866dbebe2b6a78fdc9f29b12e40c"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/ui/menu_map_select.nut.diff",
+      "bytes": 1401,
+      "sha256": "6594ea1d7064caaa970e5948f63761e2c98e0fb15e7080e148fcd13fd459b314"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/ui/menu_private_match.nut.diff",
+      "bytes": 1429,
+      "sha256": "1835bd6c371d4998def657592ea5e4ef5e0bee51fd2695157f1d293680b60a3e"
+    },
+    {
+      "path": "patches/mod/scripts/vscripts/ui/panel_mainmenu.nut.diff",
+      "bytes": 2360,
+      "sha256": "7b456f48e69620d6e8a2a8e1372301bffca00ca3121aac9f9f48f4ad50e758f5"
+    },
+    {
+      "path": "README.md",
+      "bytes": 5476,
+      "sha256": "41d47f4682d7e0ad6005f930898da22aea810f0857af305c67b4fb1839be8b0d"
+    },
+    {
+      "path": "README.ru.md",
+      "bytes": 4442,
+      "sha256": "61e7d6ab47b395f85aa0a1729a1337c55a0356333142377f4f684a9819fd2a23"
+    },
+    {
+      "path": "Start-Runoff.ps1",
+      "bytes": 3283,
+      "sha256": "6cf95ebfd05dab2a49017a300836b47b7722d29f8862915ab1b97f5ee177f628"
+    },
+    {
+      "path": "VALIDATION.json",
+      "bytes": 1322,
+      "sha256": "d0e92d04b5d91713eb96ef376a352dfa769639b47f468705fa803b00b7027867"
+    }
+  ]
+}
