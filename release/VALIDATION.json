@@ -1,5 +1,5 @@
 {
-  "version": "0.3.3",
+  "version": "0.3.4",
   "textureRecords": 1856,
   "textureDimensionsPreserved": true,
   "textureAuditErrors": [],
@@ -17,7 +17,7 @@
   "pipeAudioUserConfirmed": true,
   "pipeGrappleUserConfirmed": true,
   "twoTitanPassagesUserConfirmed": true,
-  "BSP_SHA256": "2adbecde4d3be8091265949ace781a70cb9a7d982c6b7c761368cc4dd5ed486e",
+  "BSP_SHA256": "3723e4ddd027b9a83176a17ea7a7c8cc181045df0f802f375c422b62d6e1c084",
   "titanNavigationSHA256": "6a6f3521231a189d5f7129af787933f7e5b93dfcf8fda95c4c38f695b9ccad61",
   "stbspBoundMaterials": 526,
   "stbspSHA256": "ba636e20bde84eb25690ec2a7a713e9b8ff19e83bd5ad79a33ebbce4b52006ed",
@@ -30,5 +30,26 @@
     "Additional detail normals for native two-layer materials remain unsupported.",
     "Intermittent datacache.dll transition crashes have not been established as fully resolved.",
     "Public internet hosting has not been validated."
-  ]
+  ],
+  "collisionRevision": 7,
+  "collisionModelTypes": 20,
+  "collisionModelVisualBytesPreserved": true,
+  "collisionChangedLumps": [
+    "PLANES",
+    "GAME_LUMP",
+    "CM_GRID",
+    "CM_GRID_CELLS",
+    "CM_GEO_SETS",
+    "CM_GEO_SET_BOUNDS",
+    "CM_PRIMITIVES",
+    "CM_BRUSHES",
+    "CM_BRUSH_SIDE_PLANE_OFFSETS",
+    "CM_BRUSH_SIDE_PROPERTIES",
+    "CM_BRUSH_SIDE_TEXTURE_VECTORS"
+  ],
+  "collisionGeoSets": 58509,
+  "skyScale": 0.4,
+  "skyScaleRestoresPreviousValue": true,
+  "newReleaseClientRuntimeChecked": false,
+  "originalBrushGeometryPreserved": true
 }

@@ -1,4 +1,6 @@
-# TF1 Runoff 0.3.3
+# TF1 Runoff 0.3.4
+
+Version 0.3.4 includes the accepted collision settings for 20 model types (revision 7). Runoff uses `mat_sky_scale 0.4` by default and restores the previous value on map exit.
 
 Complete Runoff port for Titanfall 2 / Northstar, delivered as **one mod and one ZIP**. This is a full package; the earlier 0.3.0 and 0.3.2 archives are not required.
 

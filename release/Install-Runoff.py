@@ -103,7 +103,7 @@ def main():
         for old_name in merged:
             if old_name in enabled and isinstance(enabled[old_name],dict):
                 for version in enabled[old_name]:enabled[old_name][version]=False
-        enabled['TF1.Runoff']={'0.3.3':True}
+        enabled['TF1.Runoff']={release['version']:True}
         for stock in stocks:enabled[stock]={'1.31.13':True}
         enabled_path.write_text(json.dumps(enabled,indent=2)+'\n')
         shutil.copy2(package/'Start-Runoff.ps1',profile/'Start-Runoff.ps1')

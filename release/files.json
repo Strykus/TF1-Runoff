@@ -1,5 +1,5 @@
 {
-  "version": "0.3.3",
+  "version": "0.3.4",
   "mod": "TF1.Runoff",
   "northstar_version": "1.31.13",
   "merged_mods": [
@@ -19,8 +19,8 @@
   "files": [
     {
       "path": "CHANGELOG.md",
-      "bytes": 1406,
-      "sha256": "9dee7e75e9769eacc891947d45c8d852e1a8d0dfa4ef5116835b92ff6ab1827a"
+      "bytes": 1700,
+      "sha256": "98dd6c803e5f8bb491d25fa99aaf5b538c9b1d52270c7c90190369b3ab67f61d"
     },
     {
       "path": "Install-Runoff.cmd",
@@ -29,8 +29,8 @@
     },
     {
       "path": "Install-Runoff.exe",
-      "bytes": 9962079,
-      "sha256": "1e7cf1a3bfb06b19a27384df12b72292dab010f3c2abaac3e0b08086b1028df3"
+      "bytes": 9962355,
+      "sha256": "12808934b7c44c6df6b20fa9a8cb506c61d05f0f61f60a0f674358e3f2451a31"
     },
     {
       "path": "Install-Runoff.ps1",
@@ -39,8 +39,8 @@
     },
     {
       "path": "Install-Runoff.py",
-      "bytes": 6953,
-      "sha256": "39239afae011bd3e15cb8abbcc3fd50f87e68b4d0165e461db9898f69cd6d657"
+      "bytes": 7081,
+      "sha256": "6be8d2e3d86b4c74c776ac603d916e9d020017daeb3514a33ee53efd82af4d92"
     },
     {
       "path": "licenses/0-LICENSE.txt",
@@ -254,8 +254,8 @@
     },
     {
       "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff.bsp",
-      "bytes": 491971820,
-      "sha256": "2adbecde4d3be8091265949ace781a70cb9a7d982c6b7c761368cc4dd5ed486e"
+      "bytes": 498152880,
+      "sha256": "3723e4ddd027b9a83176a17ea7a7c8cc181045df0f802f375c422b62d6e1c084"
     },
     {
       "path": "mods/TF1.Runoff/mod/maps/mp_tf1_runoff.stbsp",
@@ -306,6 +306,106 @@
       "path": "mods/TF1.Runoff/mod/maps/navmesh/mp_tf1_runoff_small.nm",
       "bytes": 33481788,
       "sha256": "cff1c7f9e55b0bfb0c2ac505ffebcb935b64bac9947f540963d261aedcc922fd"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/angel_city/box_small_01.mdl",
+      "bytes": 16691,
+      "sha256": "08021ee7ed7e23857f33ac8d00a25a4977273010c8a27f347a730622c06941d3"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/angel_city/box_small_02.mdl",
+      "bytes": 23414,
+      "sha256": "1e15c109e25b8b58d8c766f712de5e5cff30612cc74ba67c58fb1ae7ca2f38bd"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/angel_city/vending_machine.mdl",
+      "bytes": 98207,
+      "sha256": "e8ff2f4450ad42a42ecc75fa63b4472dc55b91d9dbbd93a08b29aaa0450a0dcf"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/containers/box_med_cardboard_01.mdl",
+      "bytes": 10218,
+      "sha256": "b74ac82b20fcf12b1fda91efe5937382e2191a150e15808059f1d97a9d90a17a"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/furniture/modular_wall_bench_angle_in.mdl",
+      "bytes": 73168,
+      "sha256": "a4edfc0ca504f88832aefac255c7d067f5de5c9e05ac7c1ffc419fbfcc625479"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/furniture/modular_wall_bench_half.mdl",
+      "bytes": 23100,
+      "sha256": "66b70adee2c598c118b0acebc78df92f65706850253e77210ea77a8c9d4b9479"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/furniture/office_divider_plastic_closed.mdl",
+      "bytes": 63830,
+      "sha256": "9fbeee6ff6a37014cc9b94e7af551c38051f9289ca418fbe39279010ce1b17c9"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/imc_base/imc_tech_smallfan_32_06.mdl",
+      "bytes": 64148,
+      "sha256": "90075b8cf4b85da3aa7d7a9db027043105da65cc555f2edc856c92f3ba4cd658"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/air_unit_badlands_02_short.mdl",
+      "bytes": 49784,
+      "sha256": "68df153a6587b4dadab05d0af7101d2f7ca42bf4156bf1dda51c52fa3119dd7c"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/indoor_console_a.mdl",
+      "bytes": 579612,
+      "sha256": "ced446bee49ecb2747795788d56114fd3ca11141037a6be60e9b15db8ed0cc34"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/indoor_console_b.mdl",
+      "bytes": 438044,
+      "sha256": "a0c792c57d2c20db2b05ccc7441b8e38045b9c981dbec33b84135fdfdd9d7b37"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/indoor_console_monitors.mdl",
+      "bytes": 263936,
+      "sha256": "bd1ea8a89bf5aac3cd96179d2f2bf64c7dae175f9bcd36afb58ffaf10b467ae6"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/indoor_console_monitors_off.mdl",
+      "bytes": 265260,
+      "sha256": "77f6e3be98e7db5d6bb3b8bf46c10890083c28b12452f37366067e4533f8534d"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/tool_chest.mdl",
+      "bytes": 243939,
+      "sha256": "f50d80da074556f345e1f7c7ef78ebacbbdfb06a8bbecf25f788b228aca9bc63"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/tool_chest_double.mdl",
+      "bytes": 228804,
+      "sha256": "7b9507d5004be6a50f935632636593a13211b36dbc5c1f6805de444e48f69b12"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/tool_chest_top.mdl",
+      "bytes": 27987,
+      "sha256": "fe73103e8603d1214ec7351046c14530afce3c5d3bbd8d92de6a333472e40eb5"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/tripod_cone_v1_low_on.mdl",
+      "bytes": 112421,
+      "sha256": "2e432dca64ab66526f63b397f3eb882c7e375509c5552705564e22c456d6a080"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/industrial/weapons_locker.mdl",
+      "bytes": 392918,
+      "sha256": "ce55d90c866776521ffeeb614cceedfcd0b09a234c43eeba93de5db25337d746"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/rise/rise_thick_pipe_blue_128.mdl",
+      "bytes": 11426,
+      "sha256": "c9277f235916b14cc67c2cda6feae30b05507056cd9cbdd3bcc8eb1f9d1debb4"
+    },
+    {
+      "path": "mods/TF1.Runoff/mod/models/rise/rise_thick_pipe_blue_64.mdl",
+      "bytes": 11423,
+      "sha256": "9a1de2165227c3e1f2bc26642fd9c63e9b2596780d23170ea5a59893eeb693eb"
     },
     {
       "path": "mods/TF1.Runoff/mod/particles/particles_manifest.txt",
@@ -414,8 +514,8 @@
     },
     {
       "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_soft_lighting.nut",
-      "bytes": 1659,
-      "sha256": "30fe290a299761beef4d8590cbb10f3ccf8bddfd93469289f3d68cbbbdef0356"
+      "bytes": 1820,
+      "sha256": "e18811ba8dfd0c9fb1903557f18745308e44827f702f3929123a8951455fd2b7"
     },
     {
       "path": "mods/TF1.Runoff/mod/scripts/vscripts/cl_runoff_tube_effects.nut",
@@ -460,7 +560,7 @@
     {
       "path": "mods/TF1.Runoff/mod.json",
       "bytes": 2709,
-      "sha256": "b7f94be3dbd5d8045dec8b0e0df9f1b940d423f197ab8fc9cccb990963aad075"
+      "sha256": "2df1996dffb1495d9400b250923e218de58929bed1bc3551d12df259dd3d39fb"
     },
     {
       "path": "mods/TF1.Runoff/northstar-patches.json",
@@ -639,13 +739,13 @@
     },
     {
       "path": "README.md",
-      "bytes": 5476,
-      "sha256": "41d47f4682d7e0ad6005f930898da22aea810f0857af305c67b4fb1839be8b0d"
+      "bytes": 5655,
+      "sha256": "bd8a871c04f77e8ad45cb786c321c4fc81d8a48b0e37cf8961a038afe949e24c"
     },
     {
       "path": "README.ru.md",
-      "bytes": 4442,
-      "sha256": "61e7d6ab47b395f85aa0a1729a1337c55a0356333142377f4f684a9819fd2a23"
+      "bytes": 4765,
+      "sha256": "e2da0b21c5823e17c0721808589d3d41180ca55895f70c668d88e086f51b9247"
     },
     {
       "path": "Start-Runoff.ps1",
@@ -654,8 +754,8 @@
     },
     {
       "path": "VALIDATION.json",
-      "bytes": 1322,
-      "sha256": "d0e92d04b5d91713eb96ef376a352dfa769639b47f468705fa803b00b7027867"
+      "bytes": 1905,
+      "sha256": "3a021e565e2306c821ae602f6c8f97c954f2baa3d8e833225b832e8268dda07e"
     }
   ]
 }

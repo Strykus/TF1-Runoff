@@ -1,6 +1,6 @@
 {
   "Name": "TF1.Runoff",
-  "Version": "0.3.3",
+  "Version": "0.3.4",
   "LoadPriority": 200,
   "RequiredOnClient": true,
   "Description": "TF1 Runoff: native map, repaired Titan navigation, modes, lighting, water, effects and menu artwork.",

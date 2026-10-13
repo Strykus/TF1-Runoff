@@ -1,3 +1,9 @@
+# 0.3.4
+
+- Apply the accepted revision 7 collision settings for 20 model types to the map and their native physics contents.
+- Use `mat_sky_scale 0.4` on Runoff and restore the prior value on exit.
+- Preserve the two repaired Titan passages, texture data, water, effects and pipe audio.
+
 # 0.3.3
 
 - Consolidated twelve Runoff runtime components into one `TF1.Runoff` mod and one complete archive.
