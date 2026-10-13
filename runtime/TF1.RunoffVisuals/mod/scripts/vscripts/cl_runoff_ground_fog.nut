@@ -105,5 +105,5 @@ file.handles.append(StartParticleEffectInWorldWithHandle(index,Vector(2600.35,-1
 file.handles.append(StartParticleEffectInWorldWithHandle(index,Vector(-664.761,434.668,55.1234),Vector(-0,90,0)))
 file.handles.append(StartParticleEffectInWorldWithHandle(index,Vector(-346.786,-2060.93,66.0011),Vector(-0,90,0)))
 file.handles.append(StartParticleEffectInWorldWithHandle(index,Vector(173.457,-3882.08,50.7492),Vector(-0,90,0)))
-printt("RUNOFF_ORIGINAL_GROUND_FOG",file.handles.len(),index)
+{}
 }

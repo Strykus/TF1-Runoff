@@ -6,7 +6,7 @@ void function RunoffReapers_Init()
  SetConVarBool("runoff_reapers_enabled",enabled)
  AddClientCommandCallback("runoff_reapers",RunoffReapers_Command)
  AddSpawnCallback("npc_super_spectre",RunoffReapers_OnSpawn)
- printt("RUNOFF_REAPERS_DEFAULT",GAMETYPE,enabled)
+ {}
 }
 bool function RunoffReapers_Command(entity player,array<string> args)
 {
@@ -17,7 +17,7 @@ bool function RunoffReapers_Command(entity player,array<string> args)
  {
   foreach(entity npc in GetNPCArray())if(IsValid(npc)&&npc.GetClassName()=="npc_super_spectre")npc.Destroy()
  }
- printt("RUNOFF_REAPERS_ENABLED",enabled)
+ {}
  return true
 }
 void function RunoffReapers_OnSpawn(entity npc){thread RunoffReapers_CheckSpawn(npc);}

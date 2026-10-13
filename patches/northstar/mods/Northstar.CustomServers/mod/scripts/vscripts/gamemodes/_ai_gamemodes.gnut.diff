@@ -1,0 +1,16 @@
+--- mods/Northstar.CustomServers/mod/scripts/vscripts/gamemodes/_ai_gamemodes.gnut
++++ TF1.RunoffNative/mod/scripts/vscripts/gamemodes/_ai_gamemodes.gnut
+@@ -94,10 +94,13 @@
+ const float REAPER_WARPFALL_DELAY = 4.7 // same as fd does
+ void function AiGameModes_SpawnReaper( vector pos, vector rot, int team, string aiSettings = "", void functionref( entity reaper ) reaperHandler = null )
+ {
++ if(GetMapName()=="mp_tf1_runoff"&&!RunoffReapers_Enabled())return;
++
+ 	float reaperLandTime = REAPER_WARPFALL_DELAY + 1.2 // reaper takes ~1.2s to warpfall
+ 	thread HotDrop_Spawnpoint( pos, team, reaperLandTime, false, damagedef_reaper_fall )
+ 
+ 	wait REAPER_WARPFALL_DELAY
++	if(GetMapName()=="mp_tf1_runoff"&&!RunoffReapers_Enabled())return;
+ 	entity reaper = CreateSuperSpectre( team, pos, rot )
+ 	reaper.EndSignal( "OnDestroy" )
+ 	// reaper highlight

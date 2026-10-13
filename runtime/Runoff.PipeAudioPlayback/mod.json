@@ -5,13 +5,6 @@
   "RequiredOnClient": true,
   "Scripts": [
     {
-      "Path": "sv_pipe_playback.nut",
-      "RunOn": "SERVER && MP",
-      "ServerCallback": {
-        "After": "RunoffPipePlayback_Init"
-      }
-    },
-    {
       "Path": "cl_pipe_playback.nut",
       "RunOn": "CLIENT && MP",
       "ClientCallback": {

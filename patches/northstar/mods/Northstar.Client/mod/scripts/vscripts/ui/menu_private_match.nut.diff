@@ -1,0 +1,19 @@
+--- mods/Northstar.Client/mod/scripts/vscripts/ui/menu_private_match.nut
++++ TF1.RunoffLobby/mod/scripts/vscripts/ui/menu_private_match.nut
+@@ -453,7 +453,7 @@
+ 
+ function GameStartTime_Changed()
+ {
+-	printt( "GameStartTime_Changed", level.ui.gameStartTime )
++	{}
+ 	UpdateGameStartTimeCounter()
+ }
+ 
+@@ -703,6 +703,7 @@
+ {
+ 	ShowPrivateMatchConnectDialog()
+ 	ClientCommand( "match_playlist private_match" )
++	SetConVarBool( "net_usesocketsforloopback", false )
+ 	ClientCommand( "StartPrivateMatchSearch" )
+ }
+ 

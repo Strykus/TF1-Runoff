@@ -1,0 +1,28 @@
+{
+  "version": "0.3.2",
+  "reconstructedFiles": 2840,
+  "installedFileChecks": 5678,
+  "mapMods": 12,
+  "stockMods": 3,
+  "omittedResourcesRestored": 1957,
+  "reconstructionSha256": "pass",
+  "zipCrc": "pass",
+  "cleanClientServerInstall": "pass",
+  "localPrivateLobbyLaunch": {
+    "mode": "at",
+    "date": "2026-10-13",
+    "userConfirmed": true,
+    "clientLogLevelInit": "13:18:10",
+    "loopbackSockets": false,
+    "sunScale": 0.4,
+    "exposure": 0.55,
+    "envmapScale": 0.6
+  },
+  "titanConnections": {
+    "preservedSha256": "6a6f3521231a189d5f7129af787933f7e5b93dfcf8fda95c4c38f695b9ccad61",
+    "userConfirmedTraversal": true
+  },
+  "allModesOrTransitionsTested": false,
+  "diagnosticModulesIncluded": false,
+  "transferToOtherComputer": false
+}

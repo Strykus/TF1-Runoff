@@ -1,7 +1,7 @@
 {
   "Name": "TF1.RunoffTubeEffects",
   "Version": "0.1.0",
-  "Description": "Original Runoff tube debris and pump particles, test candidate.",
+  "Description": "Runoff tube particles, glass debris and pump cycle.",
   "LoadPriority": 41,
   "RequiredOnClient": true,
   "Scripts": [
@@ -10,13 +10,6 @@
       "RunOn": "CLIENT && MP",
       "ClientCallback": {
         "After": "RunoffTubeEffects_Init"
-      }
-    },
-    {
-      "Path": "sv_runoff_pipe_audio.nut",
-      "RunOn": "SERVER && MP",
-      "ServerCallback": {
-        "After": "RunoffPipeAudio_Init"
       }
     }
   ]

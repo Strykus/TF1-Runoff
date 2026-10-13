@@ -3,7 +3,7 @@ void function RunoffSafeTitanfall_Init()
 {
  if(GetMapName()!="mp_tf1_runoff")return
  SetRequestTitanGamemodeRules(RunoffSafeTitanfall_Allowed)
- printt("RUNOFF_SAFE_TITANFALL_READY")
+ {}
 }
 bool function RunoffSafeTitanfall_RoofBlocked(vector p)
 {
@@ -32,11 +32,11 @@ bool function RunoffSafeTitanfall_Allowed(entity player,vector origin)
  }
  if(blocked)
  {
-  printt("RUNOFF_TITANFALL_BLOCKED",origin)
+  {}
   EmitSoundOnEntityOnlyToPlayer(player,player,"coop_sentrygun_deploymentdeniedbeep")
   SendHudMessage(player,"Titanfall requires clear space and open sky.",-1,0.4,255,255,255,255,0.15,3.0,0.5)
   return false
  }
- printt("RUNOFF_TITANFALL_ALLOWED",origin)
+ {}
  return true
 }

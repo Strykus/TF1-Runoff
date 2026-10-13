@@ -1,0 +1,45 @@
+--- mods/Northstar.CustomServers/mod/scripts/vscripts/lobby/sh_lobby.gnut
++++ TF1.RunoffLobby/mod/scripts/vscripts/lobby/sh_lobby.gnut
+@@ -55,7 +55,10 @@
+ 		"mp_lf_meadow",
+ 		"mp_lf_traffic",
+ 		"mp_lf_township",
+-		"mp_lf_uma"
++		"mp_lf_uma",
++        "mp_coliseum",
++        "mp_coliseum_column",
++        "mp_tf1_runoff"
+ 	]
+ 
+ 	table<string, array<CustomMatchSettingContainer> > customMatchSettingsByCategory // we set these up in sh_private_lobby_modes_init
+@@ -275,6 +278,12 @@
+ 		for ( int i = 0; i < numMaps; i++ )
+ 			maps.append( GetPlaylistGamemodeByIndexMapByIndex( modeName, 0, i ) )
+ 	}
++
++ if ( RunoffLobby_ModeSupported( modeName ) )
++ {
++  if ( !maps.contains( "mp_tf1_runoff" ) )maps.append( "mp_tf1_runoff" )
++ }
++ else if ( maps.contains( "mp_tf1_runoff" ) )maps.removebyvalue( "mp_tf1_runoff" )
+ 
+ 	return maps
+ }
+@@ -455,8 +464,17 @@
+ 	}
+ #endif
+ 
++bool function RunoffLobby_ModeSupported( string modeName )
++{
++ array<string> supported = [ "aitdm", "at", "cp", "ctf", "ffa", "lts", "mfd", "ps", "speedball", "tdm", "ttdm" ]
++ return supported.contains( modeName )
++}
++
+ bool function PrivateMatch_IsValidMapModeCombo( string mapName, string modeName )
+ {
++ if ( mapName == "mp_tf1_runoff" )
++  return RunoffLobby_ModeSupported( modeName )
++
+ 	array<string> mapsForMode = GetPrivateMatchMapsForMode( modeName )
+ 
+ 	return mapsForMode.contains( mapName )

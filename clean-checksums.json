@@ -1,0 +1,8 @@
+{
+  "Runoff-0.3.2-update.zip": "fb7b665c2355195259b41075079ce61987a6aff63f4cd62f739b03bab5fec06b",
+  "Apply-RunoffClean.py": "c6818df322a3ae95d7a0ff6d5b0a3314283bfe855a661c8f15a60515eee26336",
+  "Install-RunoffClean.ps1": "848a49037ec1c74a404dad3ed1ca5a3bebff3362efb4d2c93c9991a5685c1238",
+  "Start-RunoffClient.ps1": "f013ec8ea773c7113bdfc688b41bed2fd43a97d944335309fd5d91842f0fc727",
+  "Start-RunoffCleanServer.ps1": "7be927a0f122b53ab165dfa34672761d081e7785c22b5dc308e18f9674930fac",
+  "tf1-required-assets.json": "e77e98af18f9b611062096bef273df7309a238e111905d945e2b6576efdde909"
+}

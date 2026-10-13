@@ -1,6 +1,6 @@
 # Runoff for Northstar
 
-The latest map runtime update is [0.3.1](UPDATE-0.3.1.md), including preserved Titan navigation connections, accepted collisions, modes and visual effects. Download its differential package from [Releases](https://github.com/Strykus/TF1-Runoff/releases/tag/v0.3.1). Diagnostic tools are excluded. The full 0.3.0 baseline instructions below remain available.
+The latest map runtime update is [0.3.2](UPDATE-0.3.2.md): clean client/server profiles, restored lighting and water resources, preserved collision fixes and both Titan connections, and a working local private-lobby launch configuration. Download the differential package from [Releases](https://github.com/Strykus/TF1-Runoff/releases/tag/v0.3.2). Diagnostic tools and Frontier Defense are excluded. The full 0.3.0 baseline instructions below remain available.
 
 Custom Runoff map package for Titanfall 2 / Northstar, version 0.3.0.
 

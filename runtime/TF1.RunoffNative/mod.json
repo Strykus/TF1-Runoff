@@ -1,6 +1,21 @@
 {
   "Name": "TF1.RunoffNative",
   "Description": "Runoff native map and accepted collision fixes; no diagnostic tools.",
-  "Version": "0.3.1",
-  "LoadPriority": 30
+  "Version": "0.3.2",
+  "LoadPriority": 30,
+  "ConVars": [
+    {
+      "Name": "runoff_server_address",
+      "DefaultValue": "127.0.0.1:37042"
+    }
+  ],
+  "Scripts": [
+    {
+      "Path": "ui_runoff_connect.nut",
+      "RunOn": "UI",
+      "UICallback": {
+        "After": "RunoffClientConnect_Init"
+      }
+    }
+  ]
 }

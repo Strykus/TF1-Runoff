@@ -1,0 +1,92 @@
+--- mods/Northstar.Client/mod/scripts/vscripts/ui/panel_mainmenu.nut
++++ TF1.RunoffLobby/mod/scripts/vscripts/ui/panel_mainmenu.nut
+@@ -206,7 +206,7 @@
+ 	WaitFrame() // ???: doesn't work without a wait
+ 	if ( !Ps4_CheckPlus_Allowed() && !IsSingleplayer() )
+ 	{
+-		printt( "scheduling plus check" )
++		{}
+ 		Ps4_CheckPlus_Schedule()
+ 	}
+ }
+@@ -262,12 +262,12 @@
+ 
+ 			if ( DEBUG_PERMISSIONS )
+ 			{
+-				printt( "isFullyInstalled:", isFullyInstalled )
+-				printt( "isOnline:", isOnline )
+-				printt( "isGuest:", isGuest )
+-				printt( "hasPermission:", hasPermission )
+-				printt( "isStryderAuthenticated:", isStryderAuthenticated )
+-				printt( "isMPAllowedByStryder:", isMPAllowed )
++				{}
++				{}
++				{}
++				{}
++				{}
++				{}
+ 			}
+ 
+ 			buttonText = "#MULTIPLAYER_LAUNCH"
+@@ -314,15 +314,15 @@
+ 
+ 			if ( DEBUG_PERMISSIONS )
+ 			{
+-				printt( "isFullyInstalled:", isFullyInstalled )
+-				printt( "hasLatestPatch:", hasLatestPatch )
+-				printt( "isOnline:", isOnline )
+-				printt( "isPSNConnected:", isPSNConnected )
+-				printt( "hasPermission:", hasPermission )
+-				printt( "isOverAge:", isOverAge )
+-				printt( "hasPlus:", hasPlus )
+-				printt( "isStryderAuthenticated:", isStryderAuthenticated )
+-				printt( "isMPAllowedByStryder:", isMPAllowed )
++				{}
++				{}
++				{}
++				{}
++				{}
++				{}
++				{}
++				{}
++				{}
+ 			}
+ 
+ 			buttonText = "#MULTIPLAYER_LAUNCH"
+@@ -401,8 +401,8 @@
+ 
+ 			if ( DEBUG_PERMISSIONS )
+ 			{
+-				printt( "isOriginConnected:", isOriginConnected )
+-				printt( "isStryderAuthenticated:", isStryderAuthenticated )
++				{}
++				{}
+ 			}
+ 
+ 			buttonText = "#MULTIPLAYER_LAUNCH"
+@@ -567,7 +567,7 @@
+ void function OnPlayFDButton_Activate( var button )
+ {
+ 	if ( file.mpButtonActivateFunc == null )
+-		printt( "file.mpButtonActivateFunc is null" )
++		{}
+ 
+ 	if ( !Hud_IsLocked( button ) && file.mpButtonActivateFunc != null )
+ 	{
+@@ -611,6 +611,7 @@
+ 
+ 	if ( NSWasAuthSuccessful() )
+ 	{
++		SetConVarBool( "net_usesocketsforloopback", false )
+ 		NSCompleteAuthWithLocalServer()
+ 		if ( GetConVarString( "mp_gamemode" ) == "solo" )
+ 			SetConVarString( "mp_gamemode", "tdm" )
+@@ -644,7 +645,7 @@
+ void function OnPlayMPButton_Activate( var button )
+ {
+ 	if ( file.mpButtonActivateFunc == null )
+-		printt( "file.mpButtonActivateFunc is null" )
++		{}
+ 
+ 	if ( !Hud_IsLocked( button ) && file.mpButtonActivateFunc != null )
+ 	{

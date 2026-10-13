@@ -1,0 +1,49 @@
+--- mods/Northstar.Client/mod/scripts/vscripts/ui/menu_lobby.nut
++++ TF1.RunoffLobby/mod/scripts/vscripts/ui/menu_lobby.nut
+@@ -422,6 +422,7 @@
+ 	if ( Hud_IsLocked( button ) )
+ 		return
+ 
++	SetConVarBool( "net_usesocketsforloopback", false )
+ 	ClientCommand( "StartPrivateMatchSearch" )
+ }
+ 
+@@ -478,7 +479,7 @@
+ 	}
+ 	else
+ 	{
+-		printt( "Not inviting friends - CanInvite() returned false" )
++		{}
+ 	}
+ }
+ 
+@@ -955,7 +956,7 @@
+ 	OnThreadEnd(
+ 		function() : ()
+ 		{
+-			printt( "Hiding all matchmaking elems due to UpdateMatchmakingStatus thread ending" )
++			{}
+ 
+ 			HideMatchmakingStatusIcons()
+ 
+@@ -1401,9 +1402,9 @@
+ 		if ( IsConnected() && ( ( lobbyType != lastType ) || ( partySize != lastPartySize ) ) )
+ 		{
+ 			if ( lastType == null )
+-				printt( "Lobby lobbyType changing from:", lastType, "to:", debugArray[ lobbyType ] )
++				{}
+ 			else
+-				printt( "Lobby lobbyType changing from:", debugArray[ lastType ], "to:", debugArray[ lobbyType ] )
++				{}
+ 
+ 			local animation = null
+ 
+@@ -1454,7 +1455,7 @@
+ 
+ void function UICodeCallback_FactionUpdated()
+ {
+-	printt( "Faction changed! to " + GetCurrentFaction() )
++	{}
+ }
+ 
+ void function UICodeCallback_SetupPlayerListGenElements( table params, int gen, int rank, bool isPlayingRanked, int pilotClassIndex )
